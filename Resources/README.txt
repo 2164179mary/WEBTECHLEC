@@ -1,0 +1,1 @@
+This folder contains the resources that will be used in this project, and may contain such as IMAGES, ICONS, VECTORS, ILLUSTATIONS, FONTS, COLOR SCHEME, etc.
