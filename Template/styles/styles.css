@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Roboto', Arial;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.5;
     color: #333;
     margin: 0;
 }
@@ -30,11 +30,11 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 h4 {
@@ -61,10 +61,69 @@ h4 {
     clear: both;
 }
 
+.html,
+.www,
+.http {
+    width: 77%;
+    position: absolute;
+    margin-left: 21%;
+}
+
+.side-nav {
+    width: 18%;
+    height: 30%;
+    position: fixed;
+    margin-left: -2em;
+    margin-top: 6.3em;
+    padding: 1em 1em;
+    font-size: 15px;
+    border: 3px solid #4d79ff;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
+    -moz-box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
+    box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
+}
+
+.side-nav h2 {
+    font-size: 18px;
+    letter-spacing: .3em;
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: 1.5px solid #666666;
+    padding-bottom: 3px;
+    color: #333;
+}
+
+.side-nav nav > ul > li {
+    margin-top: auto;
+    padding-right: -20px;
+    color: #1a1a1a;
+}
+
+.side-nav nav > ul > li > a:hover {
+    color: #040acf;
+}
+
+.side-nav nav > ul > li > a:active {
+    font-weight: bold;
+    color: #000;
+}
+
+.side-nav nav > ul > li > a:visited {
+    text-decoration: underline;
+}
+
 /* Header */
+
 .logo,
-.nav-menu {
+.nav-menu,
+.desc-img,
+.desc-content,
+.html,
+.www,
+.http {
     float: left;
+    padding: 0 15px;
 }
 
 .logo h1 {
@@ -74,7 +133,7 @@ h4 {
 }
 
 .nav-menu {
-    width: 46%;
+    width: 49%;
 }
 
 .logo {
@@ -100,8 +159,8 @@ header {
     background: #0f77eb;
     transition: 0.5s;
     color: #fff;
-    padding: 13px 10px 13px 0;
-    box-shadow: 0 0 10px #000;
+    padding: 12px 10px 7px 0;
+    box-shadow: 0 0 13px #000;
 }
 
 header h3 {
@@ -114,7 +173,7 @@ header h3 a {
 }
 
 header nav {
-    padding: 2px 0;
+    padding: 1px 0;
 }
 
 header nav > ul {
@@ -126,6 +185,7 @@ header nav > ul > li {
     display: inline-block;
     padding-right: 15px;
     padding-left: 15px;
+    padding-bottom: 7px;
 }
 
 header nav > ul > li.active a {
@@ -138,10 +198,11 @@ header nav > ul > li > a {
     font-size: 14px;
     font-weight: bold;
     transition: 0.5s;
+    line-height: 3em;
 }
 
 header nav > ul > li > a > img {
-    height: 1.8em;
+    height: 1.6em;
     padding-top: 10px;
     padding-right: 6px;
 }
@@ -162,8 +223,9 @@ section * {
 }
 
 /* Introduction Section */
+
 #intro {
-    margin-top: 3.8em;
+    margin-top: 5.5em;
     text-align: left;
     background-color: #fff;
     color: #000;
@@ -172,18 +234,12 @@ section * {
 #intro p {
     font-weight: 300;
     font-size: 18px;
-}
-
-#intro h2 {
-    text-align: center;
+    line-height: 1.7em;
 }
 
 #intro img {
-    width: 70%;
-    height: 370px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 400px;
 }
 
 #hometopics {
@@ -199,8 +255,13 @@ section * {
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 
 /* Topics section */
-#topics {
-    margin-left: -1em;
+
+#topics-desc {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7em;
+    text-align: center;
+    color: #333;
 }
 
 figure.topic-container {
@@ -211,7 +272,7 @@ figure.topic-container {
     overflow: hidden;
     margin: 22px 1em;
     min-width: 300px;
-    max-width: 356px;
+    max-width: 355px;
     max-height: 230px;
     width: 100%;
     background: #000000;
@@ -266,7 +327,7 @@ figure.topic-container p {
 }
 
 figure.topic-container h4 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: auto;
     word-spacing: 0.15em;
     font-weight: 200;
@@ -283,6 +344,8 @@ figure.topic-container h4 b {
 
 figure.topic-container p {
     font-weight: 200;
+    font-size: 15px;
+    margin-top: 5px;
     -webkit-transform: translate3d(0%, 30%, 0);
     transform: translate3d(0%, 30%, 0);
     -webkit-transition-delay: 0s;
@@ -318,6 +381,7 @@ figure.topic-container:hover figcaption::before {
 }
 
 /* Footer */
+
 footer {
     background-color: #0f77eb;
     color: #ffff;
@@ -328,4 +392,41 @@ footer {
 footer p {
     font-size: 12px;
     text-align: center;
+}
+
+.desc-content {
+    width: 64%;
+    float: right;
+}
+
+.desc-content h2 {
+    margin-top: -6px;
+}
+
+.desc-img {
+    width: 35%;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.img-wrapper img {
+    height: 23vw;
+    width: 18.6vw;
+}
+
+#description,
+#www-content {
+    padding-top: 5.7em;
 }
