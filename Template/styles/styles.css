@@ -55,7 +55,7 @@ h4 {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 70px;
 }
 
 .content {
@@ -75,6 +75,8 @@ h4 {
 #html,
 #html-intro,
 #html-version,
+#html-5,
+#html-browser,
 #www,
 #http {
     width: 78%;
@@ -83,15 +85,15 @@ h4 {
 }
 
 .side-nav {
-    width: 18%;
-    height: 30%;
+    width: 19%;
+    height: 45%;
     position: fixed;
-    top: 5em;
+    top: 4.3em;
     margin-left: -2em;
-    margin-top: 1em;
-    padding: 1em 1em;
+    margin-top: 1.4em;
+    padding: 1em 1em 1em .2em;
     font-size: 15px;
-    border: 3px solid #4d79ff;
+    background-color: #a8e2e5;
     border-radius: 5px;
     -webkit-box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
     -moz-box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
@@ -103,28 +105,38 @@ h4 {
     letter-spacing: .3em;
     text-transform: capitalize;
     text-align: center;
-    border-bottom: 1.5px solid #666666;
+    border-bottom: 1.5px solid #333;
     padding-bottom: 3px;
-    color: #333;
+    color: #fff;
+    text-shadow: -1.5px 1.5px 0 #404040;
+}
+
+.side-nav li > a {
+    display: block;
+    transition: .2s ease-out;
 }
 
 .side-nav nav > ul > li {
-    margin-top: auto;
-    padding-right: -20px;
+    margin-top: 4px;
+    margin-left: -10px;
     color: #1a1a1a;
+    font-weight: 500;
 }
 
-.side-nav nav > ul > li > a:hover {
-    color: #040acf;
+.side-nav ul ul {
+    list-style-type: square;
 }
 
-.side-nav nav > ul > li > a:active {
+.side-nav nav > ul > li > a:first-child:hover {
+    color: #e52f37;
+    text-shadow: -1.5px 1.5px 0 #ccc;
+    font-weight: 600;
+}
+
+.side-nav ul ul li a:hover {
+    color: #e52f37;
     font-weight: bold;
-    color: #000;
-}
-
-.side-nav nav > ul > li > a:visited {
-    text-decoration: underline;
+    text-shadow: -1.5px 1.5px 0 #ccc;
 }
 
 .banner {
@@ -169,6 +181,16 @@ a {
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     text-decoration: none;
+}
+
+#link {
+    color: #077c9d;
+
+}
+
+#link:hover {
+    text-shadow: -1px 1px 0 #bfbfbf;
+    letter-spacing: 2px;
 }
 
 header {
@@ -248,7 +270,6 @@ section * {
 #intro {
     margin-top: 5em;
     text-align: left;
-    background-color: #fef9f2;
     color: #000;
 }
 
@@ -430,8 +451,20 @@ footer p {
 }
 
 .desc-img {
-    width: 35%;
+    width: 30%;
+    padding-left: 30px;
 }
+
+.browser-content {
+    margin-top: -12em;
+    width: 65%;
+    float: right;
+}
+
+.browser-content h4 {
+    margin-top: -6px;
+}
+
 
 .img-wrapper {
     position: relative;
@@ -460,7 +493,7 @@ footer p {
 .image-bg {
     z-index: 1;
     padding: 13em 0 8em 0;
-    background-image: url(../sample5.jpg);
+    background-image: url(../sample.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size: cover;
@@ -490,26 +523,70 @@ footer p {
     text-shadow: -2px 2px 0 #000;
 }
 
-#html-intro {
+#html-intro,
+#html-browser,
+#html-5 {
     margin-top: 10px;
+    padding-left: 30px;
 }
 
 #html-intro h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #565656;
-    border-bottom-width: medium;
-    text-align: center;
-    padding-bottom: 15px;
-    letter-spacing: 3px;
     width: 35%;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: -1.5px 1.5px 0 #a6a6a6;
 }
 
-#html-intro h3 {
-    margin-top: 20px;
+#html-intro,
+#html-browser,
+#html-5 h3 {
+    margin-top: 10px;
+}
+
+#html-5 h2 {
+    width: 20%;
+}
+
+#html-browser h2 {
+    width: 37%;
+    margin: 0 auto;
+}
+
+#html-browser h4 {
+    text-align: center;
+}
+
+#indent {
+    margin-left: 3em;
+}
+
+#indent li {
+    margin-left: 1.5em;
+}
+
+.center {
+    text-align: center;
+    font-weight: 600;
+}
+
+.code {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border-left: 9px solid #077c9d;
+    background-color: #1d2731;
+    color: #fff;
+}
+
+.med {
+    width: 70%;
+    padding-left: 3em;
+    padding-top: 1em;
+}
+
+dl {
+    margin: 13px 0 13px 3em;
+}
+
+dl > dt {
+    padding: 15px 0 4px 0;
 }
 
 /* Timeline */
@@ -683,4 +760,30 @@ label {
     max-height: 600px;
     color: #333;
     transition: color 0.3s linear 0.3s;
+}
+
+/* Topics Menu */
+
+#topics-menu {
+    margin-top: 5em;
+    text-align: center;
+}
+
+#topics-menu h1 {
+    position: relative;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: -2px 2px 0 #a6a6a6;
+    border-bottom: 4px solid #262626;
+    padding: 10px 0;
+}
+
+.browser-img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.browser-img img {
+    width: 13em;
+    height: 13em;
 }
