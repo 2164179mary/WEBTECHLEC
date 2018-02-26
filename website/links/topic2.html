@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseNotes</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <h1>CourseNotes</a>
+                    </h1>
+                </div>
+                <div class="nav-menu right">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html"><img src="../images/home.png">Home</a></li>
+                            <li><a href="./topics.html"><img src="../images/pin.png">Topics</a></li>
+                            <li><a href="./exercises.html"><img src="../images/mind.png">Exercises</a></li>
+                            <li><a href="./AboutUs.html"><img src="../images/group.png">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="content">
+            <section class="side-nav-http">
+                <h2>SUBTOPICS</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#html-intro">Introduction</a></li>
+                        <li><a href="#http-version">Version History</a></li>
+                        <li><a href="#http-codes">Status Code Definitaion</a></li>
+                        <li><a href="#http-works">How HTTP Works</a></li>
+                        <li><a href="#http-headers">HTTP Headers</a></li>
+                        <li><a href="#http-webdav">WebDAV</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+    <section class="image-bg">
+        <div class="container">
+            <div class="content">
+                <div class="banner">
+                    <h1>Hyper Text Transfer Protocol</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="html-intro">
+        <div class="container">
+            <div class="content">
+                <h2>Introduction</h2>
+                <h3>So What is HTTP?</h3>
+                <p>&emsp;&emsp;HTTPS or also known as the Hypertext Transfer Protocol Secure, it is a HTTP layered with a security protocol. It is usually used for e-commerce or other secure transactions. </p>
+                <div id="indention">
+                    <ul>
+                        <li>The Hypertext Transfer Control Protocol was invented by Sir Tim Berners-Lee at CERN (Conseil Européen pour la Recherche Nucléaire or European Organization for Nuclear Research)</li>
+                        <li>It was developed by Word Wide Consortium (W3C) and the Internet Engineering Task Force (IETF).</li>
+                        <li>It is the standard protocol for transferring data over the World Wide Web (www).</li>
+                        <li>It is a form of protocol of communication, most especially on how the user communicates with the server.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="http-version">
+        <div class="container">
+            <div class="content">
+                <h2>Version History</h2>
+                <p>&emsp;&emsp;There are a lot of versions of HTTP; it goes from the original HTTP that was defined in 1991 or the HTTP 0.9 until to the recent HTTP 2 that was defined on 2015. But we will focus only to the following HTTP:</p>
+                <table id="http-tables">
+                    <tr>
+                        <th></th>
+                        <th><b>HTTP 1.0 (RFC 1945)</b></th>
+                        <th><b>HTTP 1.1(RFC 2616)</b></th>
+                        <th><b>HTTP  2 (RFC 7540)</b></th>
+                    </tr>
+                    <tr>
+                        <td><i>Month and Year</i></td>
+                        <td>May 1996</td>
+                        <td>June 1999</td>
+                        <td>May 2015</td>
+                    </tr>
+                </table>
+                <h3>HTTP Request Method</h3>
+                <table id="http-tables">
+                    <tr>
+                        <th><b>Method</b></th>
+                        <th><b>Calls Server To...</b></th>
+                    </tr>
+                    <tr>
+                        <td><strong>GET</strong></td>
+                        <td>Retrieve the resources as the body of the message response that was specified of the Request-URI.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>POST</strong></td>
+                        <td>Pass the body of this request message on as data to be processed by the resource specified by the request-URI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HEAD</strong></td>
+                        <td>Return the same HTTP header fields that would be returned if a GET method were used, but not return the message body that would be returned to a GET (this provides information about a resource without the communication overhead of transmitting the body of the response, which may be quite large).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OPTIONS</strong></td>
+                        <td>Return (in Allow header field) a list of HTTP methods that may be used to access the resource specified by the Request-URI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PUT</strong></td>
+                        <td>Store the body of this message on the server and assign the specified Request-URI to the data stored so that the future GET request messages containing this Request-URI will receive this data in their response message</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DELETE</strong></td>
+                        <td>Respond to future HTTP request messages that contain the specified Request-URI with a response indicating that there is no resource associated with the Request-URI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TRACE</strong></td>
+                        <td>Return a copy of the complete HTTP request message, including start line, header fields, and body, received by the server. Used primarily for test purposes</td>
+                    </tr>
+                </table>
+                <caption>
+                    <p id="caption">Reference: Jackson, J. C. (2007). <i>Web technologies: a computer science perspective (pp 14-15).</i> Upper Saddle River, NJ: Pearson/Prentice Hall.</p>
+                </caption>
+
+                <p>&emsp;&emsp;<strong>SAFE METHOD</strong> – The safe method will only read and should not be expecting any change. It will only fetch the data</p>
+                <div class="code-http">
+                    <p class="center"><code>GET&emsp;&emsp;HEAD&emsp;&emsp;OPTIONS&emsp;&emsp;TRACE</code></p>
+                </div>
+                <p>&emsp;&emsp;<strong>IDEMPOTENT METHOD</strong> – The effect of the idempotent methods to the responses that there are no changes even if being issued many times.</p>
+                <div class="code-http">
+                    <p class="center"><code>GET&emsp;&emsp;HEAD&emsp;&emsp;OPTIONS&emsp;&emsp;TRACE&emsp;&emsp;PUT&emsp;&emsp;DELETE</code></p>
+                </div>
+                <p>&emsp;&emsp;<strong>CACHEABLE METHOD</strong> – Indicates that the response to a method is allowed to be stored for future use. It is also for saving bandwidth.</p>
+                <div class="code-http">
+                    <p class="center"><code>GET&emsp;&emsp;HEAD&emsp;&emsp;POST</code></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="http-codes">
+        <div class="container">
+            <div class="content">
+                <h2>Status Code Definitaions</h2>
+                <p>&emsp;&emsp;Below is the table of comparisons on the status codes of the HTTP 1.0, HTTP 1.1.</p>
+                <table id="http-tables">
+                    <tr>
+                        <th colspan="3"><strong>HTTP Ststus Code Definition</strong></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><strong>HTTP 1.0</strong></td>
+                        <td><strong>HTTP 1.1</strong></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>Informational 1xx</strong></td>
+                        <td></td>
+                        <td>100 Continue</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>101 Switching Protocol</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7"><strong>Successful 2xx</strong></td>
+                        <td>200 OK</td>
+                        <td>200 OK</td>
+                    </tr>
+                    <tr>
+                        <td>201 Created</td>
+                        <td>201 Created</td>
+                    </tr>
+                    <tr>
+                        <td>202 Accepted</td>
+                        <td>202 Accepted</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>203 Non-Authoritative Information</td>
+                    </tr>
+                    <tr>
+                        <td>204 No Content</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>205 Reset Content</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>206 Partial Content</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="8"><strong>Redirection 3xx</strong></td>
+                        <td>300 Multiple Choices</td>
+                        <td>300 Multiple Choices</td>
+                    </tr>
+                    <tr>
+                        <td>301 Moved Permanently</td>
+                        <td>301 Moved Permanently</td>
+                    </tr>
+                    <tr id="highlight">
+                        <td>302 Moved Temporarily </td>
+                        <td>302 Found</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>303 See Other</td>
+                    </tr>
+                    <tr>
+                        <td>304 Not Modified</td>
+                        <td>304 Not Modified</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>305 Use Proxy</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>306 (Unused)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>307 Temporary Redirect</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="18"><strong>Client Error 4xx</strong></td>
+                        <td>400 Bad Request</td>
+                        <td>400 Bad Request</td>
+                    </tr>
+                    <tr>
+                        <td>401 Unauthorized</td>
+                        <td>401 Unauthorized</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>402 Payment Required</td>
+                    </tr>
+                    <tr>
+                        <td>403 Forbidden</td>
+                        <td>403 Forbidden</td>
+                    </tr>
+                    <tr>
+                        <td>404 Not Found</td>
+                        <td>404 Not Found</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>405 Method Not Allowed</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>406 Not Acceptable</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>407 Proxy Authentication Required</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>408 Request Timeout</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>409 Conflict</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>410 Gone</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>411 Length Required</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>412 Precondition Failed</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>413 Request Entity Too Large</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>414 Request-URI Too Long</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>415 Unsupported Media Type</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>416 Request Range Not Satisfiable</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>417 Expectation Failed</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6"><strong>Server Error 5xx</strong></td>
+                        <td>500 Internal Server Error</td>
+                        <td>500 Internal Server Error</td>
+                    </tr>
+                    <tr>
+                        <td>501 Not Implemented</td>
+                        <td>501 Not Implemented</td>
+                    </tr>
+                    <tr>
+                        <td>502 Bad Gateway</td>
+                        <td>502 Bad Gateway</td>
+                    </tr>
+                    <tr>
+                        <td>503 Service Unavailable</td>
+                        <td>503 Service Unavailable</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>504 Gateway Timeout</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>505 HTTP Version Not Supported</td>
+                    </tr>
+                </table>
+                <dl>
+                    <dd>
+                        <h3>Informational 1xx </h3>
+                    </dd>
+                    <dt>- Does not define any status in HTTP 1.0 and is not a valid response to the request of HTTP 1.0. It also does not require headers for Informational 1xx. Since in HTTP 1.0 doesn’t define any status codes, clients of HTTP 1.0 must not response to the servers sending 1xx. However in HTTP 1.1, a client of HTTP 1.1 should be prepared to accept one or more status responses of 1xx. User agent may ignore the unexpected status responses. </dt>
+                    <dd>
+                        <h3>Successful 2xx </h3>
+                    </dd>
+                    <dt>-Does not define any status in HTTP 1.0 and is not a valid response to the request of HTTP 1.0. It also does not require headers for Informational 1xx. Since in HTTP 1.0 doesn’t define any status codes, clients of HTTP 1.0 must not response to the servers sending 1xx. However in HTTP 1.1, a client of HTTP 1.1 should be prepared to accept one or more status responses of 1xx. User agent may ignore the unexpected status responses. </dt>
+                    <dd>
+                        <h3>Successful 2xx </h3>
+                    </dd>
+                    <dt>– This status code indicates that the request of the client was received, understood and accepted successfully.</dt>
+                    <dd>
+                        <h3>Redirection 3xx</h3>
+                    </dd>
+                    <dt>-	This status indicates that there should be an action that needed to be taken to complete a request.</dt>
+                    <dd>
+                        <h3>Client Error 4xx</h3>
+                    </dd>
+                    <dt>-	This status indicates that a request that carries bad syntax or cannot be completed</dt>
+                    <dd>
+                        <h3>Server Error 5xx</h3>
+                    </dd>
+                    <dt>-	This status indicates that a valid request cannot be fulfill by the server.</dt>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section id="http-works">
+        <div class="container">
+            <div class="content">
+                <h2>How Http Works?</h2>
+                <p>&emsp;&emsp;HTTP is a request-response protocol. A good example on how HTTP works is a client opens his Web browser and search for something that is important. When he searches something the web browser is requesting to a server. The request compromises of</p>
+                <div id="indent">
+                    <ul>
+                        <li>Request line</li>
+                        <li>Set of request headers</li>
+                        <li>Request Message body</li>
+                    </ul>
+                </div>
+                <p>&emsp;&emsp;The server sends a response that comprises</p>
+                <div id="indent">
+                    <ul>
+                        <li>Status Line</li>
+                        <li>Response Headers</li>
+                        <li>Entity</li>
+                    </ul>
+                </div>
+                <p>&emsp;&emsp;To understand more on how HTTP works below is an example of a communication between the browser and the server, <code>www.test101.com</code>. The user requests to go to, <code>www.test101.com</code> in response, the browser relay the HTTP request to, <code>www.test101.com</code>:</p>
+                <img width="864" height="389" src="../images/http-img1.png">
+                <p>Below is the HTTP Response method</p>
+                <img alt="" width="856" height="388" src="../images/http-img2.png.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="http-headers">
+        <div class="container">
+            <div class="content">
+                <h2>HTTP Headers</h2>
+                <div id="indent">
+                    <ul>
+                        <li>
+                            <h3>General Header</h3>&emsp;&emsp;- it applies to both request and response but it has no relation to the data that was transmitted to the body.</li>
+                        <li>
+                            <h3>Request Header</h3>&emsp;&emsp;- This header contains information about the client or the resources that should be fetched. </li>
+                        <li>
+                            <h3>Response Header</h3>&emsp;&emsp;- This header has the additional response information it might be the location or the server.</li>
+                        <li>
+                            <h3>Entity Header</h3>&emsp;&emsp;- This header contains the entity body’s information like the length of the content.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="http-webdav">
+        <div class="container">
+            <div class="content">
+                <h2>WebDAV</h2>
+                <p>&emsp;&emsp;HTTP has a major extension the WebDAV (Web Distributed Authoring and Versioning). This lets the client to do remote authoring actions on web content.</p>
+                <h3>HTTP Extensions WebDAV</h3>
+                <div id="indent">
+                    <ul>
+                        <li><strong>COPY</strong>: - This method duplicates resources, properties, and collections of HTTP.</li>
+                        <li><strong>MKCOL</strong>: This method will create a collection that is new</li>
+                        <li><strong>MOVE</strong>: This method will move a resource to another URI</li>
+                        <li><strong>LOCK</strong>: The resource will have a lock</li>
+                        <li><strong>PROPFIND</strong>: This method fetches from a resource the properties</li>
+                        <li><strong>PROPPATCH</strong>: From a resource, this method can be use in creating and removing properties.</li>
+                        <li><strong>UNLOCK</strong>: The resource will be unlocked or will remove a lock</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <p>&copy;<i> Copyright 2018. <a href="index.html"><b> CourseNotes</b></a>. All Rights Reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
