@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>WebTech</title>
+    <title>CourseNotes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png"> -->
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="content">
                 <div class="logo">
-                    <h1>WebTech</a>
+                    <h1>CourseNotes</a>
                     </h1>
                 </div>
                 <div class="nav-menu right">
@@ -34,13 +34,21 @@
     <div class="container">
         <div class="content">
             <section class="side-nav">
-                <h2>Subtopics</h2>
+                <h2>SUBTOPICS</h2>
                 <nav>
                     <ul>
                         <li><a href="#html-intro">Introduction: HTML</a></li>
                         <li><a href="#html-version">HTML and XHTML Version History</a></li>
-                        <li><a href="#">HTML5 New Tags</a></li>
-                        <li><a href="#">Browser Wars</a></li>
+                        <li><a href="#html-5">HTML5</a>
+                            <ul>
+                                <li><a href="#syntax">Syntax</a></li>
+                                <li><a href="#new-elem">New Elements</a></li>
+                                <li><a href="#obsolete">Obsolete Elements</a></li>
+                                <li><a href="#kinds">Kinds of Content</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#browser">Browser Wars</a></li>
                     </ul>
                 </nav>
             </section>
@@ -193,13 +201,204 @@
         </div>
     </section>
 
+    <section id="html-5">
+        <div class="container">
+            <div class="content">
+                <h2>HTML5</h2>
+                <section id="syntax">
+                    <h3>Syntax</h3>
+                    <p>&emsp;&emsp;The first line for the syntax of an html page begins by specifying the doctype. This is important to ensure that the browser can determine the version and follow the standard of the page. The doctype element is not case sensitive.</p>
+                    <div class="code">
+                        <p class="center"><code>&lt;&#33;DOCTYPE html&gt;</code></p>
+                    </div>
+                    <p>&emsp;&emsp;The page is enclosed in an <b>&lt;html&gt;</b> element. The attribute <b>lang</b> is used to specify the language of the page.</p>
+                    <div class="code">
+                        <p class="center"><code>&lt;html lang=”en”&gt;&lt;&#47;html&gt;</code></p>
+                    </div>
+                    <p>&emsp;&emsp;Inside the &lt;html&gt; element is the <b>&lt;head&gt;</b> element which may contains the <strong>title, meta, base, link, style, script</strong>, and other element that describes the description of the web page. HTML also uses the <b>&lt;body&gt;</b> element after the &lt;head&gt; element, this contains all the element that will be translated by the browser as a web page.<br><br>&emsp;&emsp;Sample html5:</p>
+                    <p class="code med"><code>&lt;!DOCTYPE html&gt<br>
+	            &lt;html lang=”en”&gt; <br>
+	            &emsp; &emsp;&lt;head&gt; <br>
+	            &emsp; &emsp; &emsp; &emsp;&lt;title&                Sample Code &lt;&#47;title&gt; <br>
+	            &emsp; &emsp; &lt;meta charset=”utf-8”&#47;&gt; <br>
+	            &emsp; &emsp; &lt;link rel=”Stylesheet” type-“text&#47;css” href=”styles&#47;styles.css”&gt; <br><br>
+	            &emsp; &emsp; &lt;&#47;head&gt; <br>
 
+	            &emsp; &emsp; &lt;body&gt; <br>
+	            &emsp; &emsp; &emsp; &emsp; &lt;h1&gt; This is a sample code for webtech project &lt;&#47;h1&gt; <br>
+	            &emsp; &emsp; &lt;&#47;body&gt; <br><br>
+
+	            &emsp; &emsp; &lt;&#47;head&gt; <br>
+	            &lt;&#47;html&gt; <br></code></p>
+                </section>
+                <section id="new-elem">
+                    <h3><a id="link" href="https://www.w3.org/TR/2014/NOTE-html5-diff-20141209/#new-elements ">New Elements</a></h3>
+                    <div id="indent">
+                        <p>These elements are used to improve the structure for HTML5</p>
+                        <ul>
+                            <li>section</li>
+                            <li>article</li>
+                            <li>main</li>
+                            <li>aside</li>
+                            <li>header</li>
+                            <li>footer</li>
+                            <li>nay</li>
+                            <li>figure</li>
+                            <li>template</li>
+                        </ul>
+                        <p>New elements used in HTML5</p>
+                        <ul>
+                            <li>video</li>
+                            <li>audio</li>
+                            <li>track</li>
+                            <li>embed</li>
+                            <li>mark</li>
+                            <li>progress</li>
+                            <li>meter</li>
+                            <li>time</li>
+                            <li>ruby</li>
+                            <li>bdi</li>
+                            <li>wbr</li>
+                            <li>canvas</li>
+                            <li>datalist</li>
+                            <li>keygen</li>
+                            <li>output</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="obsolete">
+                    <h3><a id="link" href="https://www.w3.org/TR/2014/NOTE-html5-diff-20141209/#obsolete-elements ">Obsolete Elements</a></h3>
+                    <div id="indent">
+                        <p>These elements are not used in html5 because its functions are presentational and to be transferred in CSS.</p>
+                        <ul>
+                            <li>basefont</li>
+                            <li>big</li>
+                            <li>center</li>
+                            <li>font</li>
+                            <li>strike</li>
+                            <li>tt</li>
+
+                        </ul>
+                        <p>These elements are not used in html5 because it can damage the form and function of the web page.</p>
+                        <ul>
+                            <li>frame</li>
+                            <li>frameset</li>
+                            <li>noframes</li>
+                        </ul>
+                    </div>
+                </section>
+                <h3 id="kinds">Kind of Content</h3>
+                <p>&emsp;&emsp;The kinds of content groups an element together base on their function and similarities.</p>
+                <dl>
+                    <dt id="meta"><h4>1.&emsp;Metadata Content</h4></dt>
+                    <dd>&emsp;- These elements describes other details about the hompage. These elements are used inside the &lt;head&gt; element.</dd>
+                    <dt>&emsp;&emsp;<b>Elements:</b></dt>
+                    <dd>&emsp;- Base, link, meta, noscript, script, style, template, title</dd>
+                    <dt id="flow"><h4>2.&emsp;Flow Content</h4></dt>
+                    <dd>&emsp;- The elements that belongs in the flow content are the elements used inside the &lt;body&gt; element</dd>
+                    <dt>&emsp;&emsp;<b>Element:</b></dt>
+                    <dd>&emsp;- a, abbr, address, area, article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas, cite, code, data, datalist, del, details, dfn, dialog, div, dl, em , embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr , i , iframe, img, input, ins, kbd, label, link, main, map, mark, MathML, math, meter, nav, noscript, object, ol, output, p, picture, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong, style, sub, sup, SVG, svg, table, template, textarea, time, u, ul, var, video, wbr, text.</dd>
+                    <dt id="sectioning"><h4>3.&emsp;Sectioning  Content</h4></dt>
+                    <dt>&emsp;&emsp;<b>Elements:</b></dt>
+                    <dd>&emsp;- Article, aside, nav, section</dd>
+                    <dt id="heading"><h4>4.&emsp;Heading  Content</h4></dt>
+                    <dd>&emsp;- Elements that functions as a header for the webpage</dd>
+                    <dt>&emsp;&emsp;<b>Elements:</b></dt>
+                    <dd>&emsp;- h1, h2, h3, h4, h5, h6</dd>
+                    <dt id="phrasing"><h4>5.&emsp;	Phrasing Content</h4></dt>
+                    <dt>&emsp;&emsp;<b>Elements:</b></dt>
+                    <dd>&emsp;- a, abbr, area, audio, b, bdi, bdo, br, button, canvas, cite, code, data, datalist, del, dfn, em, embed, I, iframe, img, input, ins, kbd, label, link, map, mark, math, meter, noscript, object, output, picture, progress, q, ruby, s, samp, script, select, small, span, strong, sub, sup, svg, template, textarea, time, u, var, video, wbr, text.</dd>
+                    <dt id="embedded"><h4>6.&emsp;Embedded Content</h4></dt>
+                    <dd>&emsp;- These elements imports another resources.</dd>
+                    <dt>&emsp;&emsp;<b>Elements:</b></dt>
+                    <dd>&emsp;- audio, canvas, embed, iframe, img, math, object, picture, svg, video</dd>
+                    <dt id="interactive"><h4>7.&emsp;Interactive Content</h4></dt>
+                    <dd>&emsp;- These elements is used for interaction on user.</dd>
+                    <dt>&emsp;&emsp;<b>Elements:</b></dt>
+                    <dd>&emsp;- a, audio, button, details, embed, iframe, img, input, label, select, textarea, video</dd>
+                    <dt><br><br><h4>Global  Attribute</h4></dt>
+                    <dd>&emsp;- these attributes are accessible by all elements.</dd>
+                    <dt>&emsp;&emsp;&emsp;<b>Attributes:</b></dt>
+                    <dd>&emsp;- accesskey, class, contenteditable, dir, draggable, hidden, id, lang, spellcheck, style, tabindex, title, translate</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section id="html-browser">
+        <div class="container">
+            <div class="content">
+                <h2>Browser Wars</h2>
+                <h3>War I</h3>
+                <p>&emsp;&emsp;During 1995 to 2001, the first browser war happened between Microsoft Internet Explorer and Netscape Navigator also known as Netscape. Who brought dominance in the web in the first place?</p>
+                <p>&emsp;&emsp;Before the release of Internet Explorer and Netscape, the first internet browser was WorldWideWeb, known today as Nexus. After the rise of the first browser numerous companies launched their developed internet browsers. During 1993, the version 1 of the Mosaic browser was released for Sun Microsystems Inc.’s workstation which dominated the browser market for over a year. However before the Mosaic browser was announced, Lou Montulli releases a text-based browser named Lynx v2.0a. On the other hand, Dave Raggett is working hard on his internet browser, Arena which he planned to demonstrate the newly invented features of HTML. In 1995, Netscape was released and overshadow the popularity of Mosaic browser. In the same year, however, Internet Explorer version 1 of Microsoft supersedes the popularity of Netscape.</p>
+                <h3>War II</h3>
+                <p>&emsp;&emsp;The development of numerous internet browsers triggers the second browser war which happened during the early 2000’s until today. The primary browsers are Internet Explorer, the conqueror during the Browser War I, and newly born browsers mainly of Mozilla Firefox, Opera, Safari and Google Chrome. In 2012, Google Chrome surpassed Internet Explorer in traffic share, which entitles Google Chrome to be the number one web browser these days. </p>
+                <h3>Browsers</h3>
+                <h4>The Big Three</h4>
+                <p>&emsp;&emsp;The Big Three holds the three biggest web browsers today. These are the Google Chrome, Mozilla Firefox and Internet Explorer. The said browsers hold about 80% of the browser usage.</p>
+                <h4>The Big Five</h4>
+                <p>&emsp;&emsp;The Big Five browsers include The Big Three together with Opera and Safari browsers. Opera and Safari hold about 15% of the browser usage, thus the remaining was contributed by the three most used browsers. </p>
+                <section id="browsers">
+                    <div class="container">
+                        <div class="content">
+                            <div class="browser-img">
+                                <div class="img-wrapper">
+                                    <img src="../images/ie.png">
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <h4>Internet Explorer</h4>
+                                <p>&emsp;&emsp;Internet Explorer sometimes referred to us IE is a web browser made and maintained by Microsoft. IE is a great browser competitor present both in Browser War I and II. </p>
+                            </div>
+                            <div class="browser-img">
+                                <div class="img-wrapper">
+                                    <img src="../images/chrome.png">
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <h4>Google Chrome</h4>
+                                <p>&emsp;&emsp;Google Chrome, a web browser made and maintained by Google is the number one browser in today’s era. Chrome won the Second Browser War during 2012. </p>
+                            </div>
+
+                            <div class="browser-img">
+                                <div class="img-wrapper">
+                                    <img src="../images/mozilla.png">
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <h4>Mozilla Firefox</h4>
+                                <p>&emsp;&emsp;Mozilla Firefox is created by Mozilla. It came with many names like, Phoenix and Firebird before finally introducing it into the public as Firefox.</p>
+                            </div>
+                            <div class="browser-img">
+                                <div class="img-wrapper">
+                                    <img src="../images/opera.png">
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <h4>Opera</h4>
+                                <p>&emsp;&emsp;Opera web browser is being maintained by Opera Software. It was launched in 1996, and is the second oldest browser of the “The Big Five”.</p>
+                            </div>
+                            <div class="browser-img">
+                                <div class="img-wrapper">
+                                    <img src="../images/safari.png">
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <h4>Safari</h4>
+                                <p>&emsp;&emsp;Apple Safari commonly shortened as Safari is a web browser made and maintained by Apple. This browser is included in Apple’s device such as iPod Touch and iPhone. .</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </section>
 
 
     <footer>
         <div class="container">
             <div class="content">
-                <p>&copy;<i> Copyright 2018. <a href="index.html"><b>WebTech</b></a>. All Rights Reserved.</i></p>
+                <p>&copy;<i> Copyright 2018. <a href="index.html"><b>CourseNotes</b></a>. All Rights Reserved.</i></p>
             </div>
         </div>
     </footer>
