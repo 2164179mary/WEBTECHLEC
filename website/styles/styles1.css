@@ -248,6 +248,10 @@ header nav > ul > li > a:hover {
     z-index: 1;
 }
 
+.compile p {
+    display: inline;
+}
+
 /* Footer */
 
 footer {

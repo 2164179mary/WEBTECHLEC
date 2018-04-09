@@ -1363,6 +1363,10 @@ a.links {
     width: 70%;
 }
 
+.compile p {
+    display: inline;
+}
+
 /* Footer */
 
 footer {
