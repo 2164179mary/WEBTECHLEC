@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseNotes</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <img alt="logo" src="../images/CourseNotes%20Logo%20.png">
+                </div>
+                <div class="nav-menu right">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html"><img src="../images/home.png">Home</a></li>
+                            <li><a href="./topics.html"><img src="../images/pin.png">Topics</a></li>
+                            <li><a href="./exercises.html"><img src="../images/mind.png">Exercises</a></li>
+                            <li><a href="./AboutUs.html"><img src="../images/group.png">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <section class="side-nav-http">
+                <h2>SUBTOPICS</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#css">Introduction</a></li>
+                        <li><a href="#css-style">(X) HTML Style Sheets</a></li>
+                        <li><a href="#css-statements">CSS Statements</a></li>
+                        <li><a href="##css-prefrapol">CSS Preprocessors, Frameworks, and Polyfills</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+    <section class="image-bg">
+        <div class="container">
+            <div class="content">
+                <div class="banner">
+                    <h1>Javascript</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="css">
+        <div class="container">
+            <div class="content">
+                <h2>Introduction</h2>
+                <h3>What is Javascript?</h3>
+                <p>&emsp;&emsp; Javascript (JS) is written using Unicode-character set. It is developed by Brendan Eich at Netscape Communications as the scripting language for the Netscape Navigator Browser. JS is
+                    <emp>case sensitive</emp> while the HTML is not case-sensitive.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="css">
+        <div class="container">
+            <div class="content">
+                <h2>Grammar</h2>
+                <ul class="upper-letters">
+                    <li><strong>Whitespace</strong></li>
+                    <li><strong>Comments</strong>
+                        <ul class="no-style">
+                            <li>&emsp;&emsp;There are two ways to write a comment in javascript namely, a block comments and a line-ending comments.</li><br>
+                            <li><strong>Block Comments</strong></li>
+                            <li>
+                                <div class="code left">
+                                    <p class="center"><code>/* this is a Comment */</code></p>
+                                </div>
+                            </li><br>
+                            <li><strong>Line-ending comments</strong></li>
+                            <li>
+                                <div class="code left">
+                                    <p class="center"><code>//this is a comment</code></p>
+                                </div>
+                            </li><br>
+                        </ul>
+                    </li>
+                    <li><strong>Reserved Words</strong>
+                        <ul class="no-style">
+                            <li>You can use different names in variables, but these reserved words are not among them.</li><br>
+                            <li>abstract</li>
+                            <li>boolean break byte</li>
+                            <li>case catch char class const continue</li>
+                            <li>else enum export extends</li>
+                            <li>false final finally float for function</li>
+                            <li>goto</li>
+                            <li>if implements import in instanceof int interface</li>
+                            <li>long</li>
+                            <li>native new null</li>
+                            <li>package private protected public</li>
+                            <li>return</li>
+                            <li>short static super switch synchronized</li>
+                            <li>this throw throws transient true try typeof</li>
+                            <li>var volatile void</li>
+                            <li>while withdebugger default delete do double</li>
+                        </ul>
+                    </li><br>
+                    <li><strong>Numbers</strong>
+                        <ul class="no-style">
+                            <li>Numbers in Javascript is represented in a 64-bit floating point.</li><br>
+                        </ul>
+                        <ul>
+                            <li><b>Negative number</b> - a negative number can be expressed by adding “-” to a number. Eg. (-2, -3, -4).<br>
+                                <ul class="no-style center">
+                                    <li>image</li><br>
+                                    <li><i>&#42;In this figure the Math.sign() function was used. It returns the sign of the number that indicates whether it is a negative number (-1), a positive number (1), or a zero(0).</i>i></li><br>
+                                    <li>image</li><br>
+                                    <li><i>&#42;*Math.sign() function returns 1, it means that the number is positive</i></li><br>
+                                </ul>
+                            </li>
+                            <li><strong>NaN (Not a Number)</strong>
+                                <ul class="no-style">
+                                    <li>Like the name implies, this is a value that is not considered a number. The function <strong>isNan(number)</strong> is used to determine whether a number is NaN or not.</li><br>
+                                    <li>image</li><br>
+                                </ul>
+                            </li>
+                            <li><strong>Infinity</strong> - an infinite number.</li>
+                        </ul>
+                    </li><br>
+                    <li><strong>Strings</strong>
+                        <ul class="no-style">
+                            <li>Unlike in java, a String can be distinguished by enclosing it with a
+                                <emp>double quote (“ “)</emp> or a
+                                <emp>single quote (‘ ‘)</emp>.</li>
+                        </ul><br>
+                        <ul>
+                            <li><strong>length</strong> - you can determine a String’s length by using this function. For example, the word “hello” has the length of 5.</li>
+                            <li><strong>&#43; operator</strong> - you can use this operator to concatenate a String in to one.</li>
+                        </ul>
+                        <ul class="no-style">
+                            <li><strong>NOTE: javascript does not use a character type.</strong></li>
+                        </ul>
+                    </li><br>
+                    <li><strong>Statements and control structures</strong>
+                        <ul>
+                            <li>It is a compiled set of executable statements</li>
+                            <li><strong>Var statement</strong>
+                                <ul>
+                                    <li>It can be declare global or local scoped variables example : declaring for local scoped variable
+                                        <ul class="no-style">
+                                            <li>
+                                                <p class="code med"><code>for(;;){<br>
+                                            &emsp;&emsp;Var private Var;<br>
+                                            }<br></code></li>
+                                            <li><strong>Declaring for global variable</strong></li>
+                                            <li>
+                                                <p class="code med"><code>Var world;</code></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>The statements are tend to execute from top to bottom. It can be altered the execution sequence by having conditional statements, loop statements, disruptive statements, and function invocation</li>
+                            <li>A block of statements are wrapped with curly braces
+                                <ul class="no-style">
+                                    <li>Example:</li>
+                                    <li>
+                                        <p class="code med"><code>function hello {<br>
+                                &emsp;&emsp;Var world;<br>
+                                &emsp;&emsp;//statements<br>
+                                &emsp;&emsp;if(...){<br>
+                                &emsp;&emsp;//statements<br>
+                                &emsp;&emsp;}<br>
+                                            }<br></code></li>
+                                </ul>
+                            </li>
+                            <li>The if statement works like if statement of java. If the if statement is executed, and if the expression is true the then block will be executed, and if the expression is false the else statement will be executed.</li>
+                            <li><strong>The Switch Statement</strong>
+                                <ul>
+                                    <li>compares the expression with all cases for equality</li>
+                                    <li>Allows any expression type to be used as the switch expression</li>
+                                </ul>
+                            </li>Conventional form
+                            <li>Case clause can have one or more expressions. Break statements are used to exit the switch</li>
+                            <li>The while statements performs looping, if the expression is false the loop will terminate, and if it is true the block of the loop will be executed.</li>
+                            <li>The for statement it also performs looping. There are two forms of the for loop.
+                                <ul>
+                                    <li><strong>Conventional form</strong></li>
+                                    <li class="no-style">
+                                        <p class="code med"><code>for(initialization; condition; incrementation){<br>
+                                    <br>
+                                    }<br></code></li>
+                                    <li><strong>For in loop</strong></li>
+                                    <li class="no-style">
+                                        <p class="code med"><code>for(myVar in obj) {<br>
+                                        &emsp;&emsp;If (obj.hasOwnProperty(myVar))(<br>
+                                        &emsp;&emsp;//statements<br>
+                                        &emsp;&emsp;}<br>
+                                        }<br></code></p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Do statements works like the while statement but the expression is first tested before the block of the loop is will be executed.</li>
+                            <li>Try-catch statements, throw statement
+                                <ul>
+                                    <li>Throw and catch can handle any expression</li>
+                                </ul>
+                            </li>
+                            <li>Return statements</li>
+                            <li>Break statement</li>
+                        </ul>
+                    </li><br>
+                    <li><strong>Expressions</strong>
+                        <ul class="no-style">
+                            <li>Expression has operators, below is the precedence of operators</li>
+                            <li>
+                                <table id="http-tables">
+                                    <tr>
+                                        <td><b>&#91;&#93; ()</b></td>
+                                        <td>Refinement and invocation</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Delete new type of + - !</strong></td>
+                                        <td>Unary Operators</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>* / % </strong></td>
+                                        <td>multiplication, division, remainder</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>+ -</strong></td>
+                                        <td>addition/concatenation, subtraction</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>&gt;= &lt;= &gt; &lt;</strong></td>
+                                        <td>Inequality</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>== !== </strong></td>
+                                        <td>Equality</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>&amp;&amp;</strong></td>
+                                        <td>logical and</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>||</strong></td>
+                                        <td>logical or</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>?:</strong></td>
+                                        <td>ternary</td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Literals</strong>
+                        <ul>
+                            <li>Its is convenient notation to specify new objects.</li>
+                            <li>Names of the property can be specified as names or as strings</li>
+                            <li>The names are treated as literals, not as variable names.</li>
+                            <li>Values of properties are expressions.</li>
+                        </ul>
+                    </li><br>
+                    <li><strong>Funtions</strong>
+                        <ul>
+                            <li>A function literals defines a value of a function.</li>
+                            <li>Can specify parameters that will act as variables</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="css-style">
+        <div class="container">
+            <div class="content">
+                <h2>Data Types</h2>
+                <ul class="upper-letters">
+                    <li>Primitive data types
+                        <ul>
+                            <li><i>Numbers</i>
+                                <ul>
+                                    <li>Binary</li>
+                                    <li>Decimal</li>
+                                    <li>Hexadecimal</li>
+                                    <li>Octal</li>
+                                    <li>Exponential</li>
+                                </ul>
+                            </li>
+                            <li><i>Boolean</i>
+                                <ul>
+                                    <li>True</li>
+                                    <li>False</li>
+                                </ul>
+                            </li>
+                            <li><i>Strings</i></li>
+                            <li><i>Undefined and Null</i>
+                                <ul>
+                                    <li>Empty string</li>
+                                    <li>False</li>
+                                    <li>0</li>
+                                </ul>
+                            </li>
+                            <li><i>Object</i></li>
+                        </ul>
+                        <li><strong>Composite (object) Types</strong>
+                            <ul>
+                                <li>Core JavaScript Objects</li>
+                                <li>Browser Object Model (BOM)</li>
+                                <li>Document Object Model (DOM)</li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="css-style">
+        <div class="container">
+            <div class="content">
+                <h2>Asynchronous JavaScript and XML</h2>
+                <ul>
+                    <li><strong>Synchronous Request</strong>
+                        <ul>
+                            <li>Recommended for few small request. The server response should be ready so JavaScript will continue to execute. If the server is busy or slow, the application will hang or stop.</li>
+                        </ul>
+                        <li><strong>Asynchronous Request</strong>
+                            <ul>
+                                <li>The JavaScript does not have to wait for the server response. It can execute other scripts while waiting for the server response, and deal with the response when the response is ready.</li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="css-style">
+        <div class="container">
+            <div class="content">
+                <h2>JavaScript and EcmaScript</h2>
+                <ul class="no-style">
+                    <li><strong>Ecma International</strong>
+                        <ul>
+                            <li> it is an organization that is responsible for creating standards for the technologies.</li>
+                        </ul>
+                        <li><strong>Ecma-262</strong>
+                            <ul>
+                                <li>This is the standard the was published by Ecma International. This standard has the specifications for scripting language.</li>
+                                <li> It represents the specifications of a scripting language known as the EcmaScript.
+                                    <ul>
+                                        <li>EcmaScript Specification
+                                            <ul>
+                                                <li>iIt provides the rules and guidelines that a certain scripting language must observe.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Javascript</strong>
+                            <ul>
+                                <li>It is a dynamic scripting language that comply with the EcmaScript Specification.</li>
+                            </ul>
+                        </li>
+                </ul>
+                <p><b>NOTE: The EcmaScipt Specification is used to create the desired scripting language while you can learn the usage of the scripting language in Javascript.</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="css-style">
+        <div class="container">
+            <div class="content">
+                <h2>Client-Side JavaScript Execution Environment</h2>
+                <ul>
+                    <li>(Core JavaScript (EcmaScript) Language and API</li>
+                    <li>(Traditional) Browser Object Model (BOM) API (non-standardized)
+                        <ul>
+                            <li>Window, Navigator, Screen, Location, History, etc.</li>
+                        </ul>
+                    </li>
+                    <li>Document Object Model (DOM) API
+                        <ul>
+                            <li>DOM API Interfaces
+                                <ul>
+                                    <li>Node, Document, Element, Text, Attr, DocumentType, Comment, etc.</li>li>
+                                    <li>Event, EventTarget, EventListener, etc.</li>li>
+                                    <li>CSSStyleSheet, CSSRule, etc.</li>li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Miscellaneous JavaScript Web APIs
+                        <ul>
+                            <li>Geolocation, IndexedDB, Local Storage, File, Push Notifications, Service orkers, Web Sockets, Web Workers, XMLHttpRequest (AJAX), etc</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><b>NTE: most of the APIs are accessed from scripts via the global object 'Window'</b></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="css-prefrapol">
+        <div class="container">
+            <div class="content">
+                <h2>Document Object Model (DOM)</h2>
+                <ul>
+                    <li>API that allows access to the HTML document from within scripts associated with the web page</li>
+                    <li>a parsed HTML document is represented by a 'DOM tree', which contains 'nodes' representing elements, element attributes, textual content, and other HTML document components (e.g., DOCTYPE, comments, etc.)</li>
+                    <li>the API is accessed via the 'Document' object property of the global 'Window' object</li>
+                    <li>DOM API functionalities:
+                        <ul>retrieve references to nodes (or node collections) in the DOM:
+                            <li>getElementById()</li>
+                            <li>getElementsByTagName(), getElementsByClassName(), getElementsByName()</li>
+                            <li>querySelector(), querySelectorAll()</li>
+                        </ul>
+                    </li>
+                    <li>traverse the DOM tree (from a given node):
+                        <ul>
+                            <li>parentNode, parentElement</li>
+                            <li>childNodes, children</li>
+                            <li>firstChild, lastChild, nextSibling, previousSibling</li>
+                            <li>firstElementChild, lastElementChild, nextElementSibling, previousElementSibling</li>
+                        </ul>
+                    </li>
+                    <li>construct/copy nodes:
+                        <ul>
+                            <li>createElement(), createTextNode(), createAttribute(), etc.</li>
+                            <li>cloneNode(), importNode()</li>
+                        </ul>
+                    </li>
+                    <li>manipulate the DOM tree:
+                        <ul>
+                            <li>appendChild(), insertBefore(), replaceChild(), removeChild()</li>
+                            <li>adoptNode()</li>
+                        </ul>
+                    </li>
+                    <li>miscellaneous attributes and methods:
+                        <ul>
+                            <li>nodeType, nodeName, nodeValue</li>
+                            <li>attributes, id, tagName, className, classList</li>
+                            <li>ownerDocument, documentElement, hasChildNodes()</li>
+                            <li>normalize()</li>
+                            <li>manipulate attributes (for 'Element' nodes):
+                                <ul>
+                                    <li>setAttribute(), getAttribute(), removeAttribute()</li>
+                                    <li>setAttributeNode(), getAttributeNode(), removeAttributeNode()</li>
+                                </ul>
+                            </li>
+                            <li>event handling:
+                                <ul>
+                                    <li>addEventListener(), removeEventListener(), dispatchEvent()</li>
+                                </ul>
+                            </li>
+                            <li>style handling:
+                                <ul>
+                                    <li>styleSheets, ownerRule, cssRules, insertRule(), deleteRule()</li>
+                                    <li>getComputedStyle()</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><i>&#42;although technically not defined as part of the DOM, browsers typically support other properties and methods that can be used to interact with the DOM tree:</i></p>
+                <p>&emsp;&emsp;- innerHTML, outerHTML, innerText, outerText</p>
+                <p>&emsp;&emsp;- references to oft-used document sections and collections: </p>
+                <p>&emsp;&emsp;&emsp;&emsp;- head, body, anchors, forms, images</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <p>&copy;<i> Copyright 2018. <a href="index.html"><b>CourseNotes</b></a>. All Rights Reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+</body>
