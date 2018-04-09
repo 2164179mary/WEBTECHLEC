@@ -6,8 +6,12 @@ var submit = function(){
     countQuestions();
     var correct = 0;
     for(var i = 0; i < questionLength+1; i++){
+        
         var radio = document.getElementsByName('q'+i);
-        for(var j = 0; j < radio.questionLength; j++){
+        console.log(radio);
+        
+        for(var j = 0; j < radio.length; j++){
+                    console.log("HERE");
             var radioPerQuestion = radio[j];
             if(radioPerQuestion.value == "c" && radioPerQuestion.checked){
                 correct++;
@@ -26,7 +30,7 @@ var countQuestions = function() {
 
 var printResult = function(correct){
     
-    document.getElementById("result").innerHTML = correct;
+    document.getElementById("result").innerHTML = "Score: "+correct+" out of "+ questionLength+ " question";
     for(var i = 0; i < questionLength; i++){
         var index = i+1;
         var x = document.getElementById("answer"+index);
