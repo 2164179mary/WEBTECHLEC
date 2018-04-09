@@ -101,7 +101,9 @@ section * {
 #css,
 #css-style,
 #css-statements,
-#css-prefrapol {
+#css-prefrapol,
+#js,
+#js-grammar{
     width: 78%;
     position: relative;
     margin-left: 21%;
@@ -796,7 +798,9 @@ figure.topic-container:hover figcaption::before {
 #css,
 #css-style,
 #css-statements,
-#css-prefrapol {
+#css-prefrapol,
+#js,
+#js-grammar {
     margin-top: 10px;
     padding-left: 30px;
 }
@@ -823,7 +827,9 @@ figure.topic-container:hover figcaption::before {
 #css,
 #css-style,
 #css-statements,
-#css-prefrapol {
+#css-prefrapol,
+#js,
+#js-grammar {
     margin-top: 10px;
 }
 
