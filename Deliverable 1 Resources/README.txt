@@ -1,0 +1,1 @@
+To access the website, open "index.html" which is the root html for the course website.

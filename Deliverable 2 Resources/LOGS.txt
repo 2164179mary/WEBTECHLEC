@@ -1,0 +1,510 @@
+commit d5ea572e4553dbf0eb533d97dd53971fb1860b86
+Merge: 9a29bb7 5ba238c
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 15:58:28 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 9a29bb7f7d150f8cfea863afad9e20a1122bc021
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 15:56:09 2018 +0800
+
+    Added the css for the AboutUs.html and topics.html
+
+commit 5ba238c65090c307f43842c0485c2611cc3f0c50
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Mon Feb 26 15:51:57 2018 +0800
+
+    References
+
+commit 495b9013ec556c30924673f90fd1761a79c90db3
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Mon Feb 26 15:46:40 2018 +0800
+
+    References
+
+commit dd15719b2ce5c6662656c41b58b3c81b178f8077
+Merge: 5eb9db0 2ded9de
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 15:14:00 2018 +0800
+
+    resolving some conflicts and updated and added html files
+
+commit 2ded9de21710909e7868b32ce5af67b55ea7ad30
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:37:19 2018 +0800
+
+    Updated version of topics.html
+
+commit b632e2a5816cfa26863a36aa7a634344f46749cc
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:30:58 2018 +0800
+
+    Added the images of the icons, and the "Topics.html"
+
+commit 88160f5438b6929be92e4d1a8c554f531d1f4a92
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:29:02 2018 +0800
+
+    Updated the AboutUs.html and changed the file location of "topics.html" to links.
+
+commit c3e61044fbc322a2b5b1046f1a3aa5dca4eacc02
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:03:35 2018 +0800
+
+    Updated Version of AboutUs.html
+
+commit 5e43cf6f395849290a89c10c150ebf5d59efeb69
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 13:50:52 2018 +0800
+
+    Added the AboutUs.html
+
+commit 0ce423c2255e7a19567c96bcc89c98f885741ca2
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 13:45:20 2018 +0800
+
+    Added images for the ABOUT US section.
+
+commit 02fb1cfe137d6c7c893dbd9ac179b849c5485f51
+Merge: 8552b0c e5be8a8
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 12:00:50 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 8552b0c7dc8e347b9233763f1ae1d5419a969a88
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 11:59:01 2018 +0800
+
+    Added the raw resources of the "Browser Wars" and the rendered version "Broswer Wars.png"
+
+commit e5be8a81de6bc64f8b640ff2f6e82c4daca10f67
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Mon Feb 26 11:46:59 2018 +0800
+
+    About us
+
+commit 5eb9db0f578599cf7be8ba70f96ee39ad4890c85
+Merge: 0e0715e 41f3a2c
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 10:01:06 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 0e0715e727a1bdfc9c22f7565067abe5c7d110b7
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 09:55:21 2018 +0800
+
+    updated the topic3.html and styles.css
+
+commit 41f3a2cfb557547c29874efe44dd7dc1c84a3895
+Merge: 3bc5c3b 2b21bb2
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 02:29:37 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 3bc5c3b26d46ee90d386e3d31c29cb623066e9ef
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 02:29:05 2018 +0800
+
+    Added topics.html
+
+commit 2b21bb2b89b5053ba3429b812781915851f98306
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 01:49:32 2018 +0800
+
+    added the timeline section in topic3.html and updated the css
+
+commit d00a4e915f553ad71ff938f2315f99695d3b1a57
+Merge: 8e5e0e2 ead9c5f
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 01:33:41 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 8e5e0e2f181ad870a54d64337073c6ec8aa9ce34
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 01:31:10 2018 +0800
+
+    Added the typography for the subtopics of HTML (temporary)
+
+commit ead9c5f9906230a7d5602a7483fb3e9e2ab30be1
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Sun Feb 25 21:34:16 2018 +0800
+
+    Add files via upload
+    
+    added photo for about us
+
+commit 1bb554bb4dbaeeaee5c73a39a88c64a2dac1275c
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 19:25:54 2018 +0800
+
+    Added the choices of color scheme for the website
+
+commit cfa05efc52e363d51a9f4a4fcd60056ccd0eea59
+Author: LmpFerrer <2165944@slu.edu.ph>
+Date:   Sun Feb 25 18:18:22 2018 +0800
+
+    updated the topic3.html
+
+commit dcb8231623bd9f23caa194915aba6576789552b0
+Author: LmpFerrer <2165944@slu.edu.ph>
+Date:   Sun Feb 25 18:07:18 2018 +0800
+
+    updated the styles.css
+
+commit 4c0285cf135de030907d7d1e1b58fd02e246c5ae
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Sun Feb 25 18:03:34 2018 +0800
+
+    return the previous images
+
+commit 0ce574ef759c1a7feb03c23a6d54afe248555a5d
+Merge: a052f05 8f6dc8c
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Sun Feb 25 17:54:36 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit a052f0574b8e2656edfb423ad9b6e99e32bf7ff4
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Sun Feb 25 17:52:37 2018 +0800
+
+    updated the index.html and added a file video/short-video-clip.mp4
+
+commit 8f6dc8c231982bbff3195e063a5cb1437e42f1d7
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 16:43:10 2018 +0800
+
+    Updated version of the images.
+
+commit 7cdd9dad9d6cbc8fd694b2688c5f957dfeba7f98
+Author: LmpFerrer <2165944@slu.edu.ph>
+Date:   Sun Feb 25 16:19:36 2018 +0800
+
+    updated the styles.css and index.html
+
+commit 5acab1cdb71f6a32cb11b8eb9e23b0ada96a3b1e
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 15:36:26 2018 +0800
+
+    Updated the html files.
+
+commit 8e192da9368715bad0f1cf0c023aac64e69fd59d
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 15:28:13 2018 +0800
+
+    Updated index.html
+
+commit 5c9b09edea797c8e5a7325ce680c59a590676fec
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 15:24:29 2018 +0800
+
+    Updated the index.html and insert the FINAL IMAGES for the typography for the TOPICS.
+
+commit 52637272008ed6940a57cb1f6bf3b5d5b6e5c01a
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 15:21:10 2018 +0800
+
+    Added the final typography for the TOPIC SECTION, GIF for the HOME PAGE, and the raw version "Topics - Text.psd"
+
+commit 2ad293f42b069a16095c022629745d221d5179c7
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 15:15:36 2018 +0800
+
+    Added the GIF for the Home Page
+
+commit f6eb750e8fd93149d79c01ed46c441acc24efd7e
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 15:13:44 2018 +0800
+
+    Added the raw resources for the GIF that will be used in the HOME PAGE.
+
+commit 6368ae44c185d52c1d1c774b460d0094cc5d9f02
+Merge: 16941f4 df1f60c
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 14:49:55 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 16941f459ad13b0d917eac9b7119ac0854074402
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Sun Feb 25 14:48:40 2018 +0800
+
+    Created a folder named "RESOURCES" and uploaded the temporary images "CSS3(tempo).png", "HTML5(tempo).png", and "HTTP(tempo).png".
+    
+    Including the README.txt
+
+commit df1f60c1437f76533b71b8fce1d6a67f8e76b99a
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Sun Feb 25 13:36:41 2018 +0800
+
+    Add files via upload
+    
+    added references of HTTP
+
+commit 8bee2292012a1846fd24ea1b8f3f687a4ae9bf74
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Sun Feb 25 13:21:56 2018 +0800
+
+    Add files via upload
+    
+    Added information on WebDAV
+
+commit 1564ee4ecc6f7da2174553eb33bb9c36d03ba540
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Sun Feb 25 13:07:30 2018 +0800
+
+    added some images in the image folder and some updates on the html and css file
+
+commit 1bcfe38750c216c4ecda76049920f7a98c7ee0ad
+Merge: bbe10f0 897893c
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Sat Feb 24 22:41:54 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 897893c6d1d81d1bc3b8c7b094bb1e9a22b783e5
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Sat Feb 24 22:09:04 2018 +0800
+
+    types of content for html png file
+
+commit 375144dbf737b1facaf00eb3619e706067fe2722
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Sat Feb 24 20:46:33 2018 +0800
+
+    updated the summary of Web
+
+commit bbe10f0da6580839646a1f6f5b4ec81dfd7dbc8c
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Sat Feb 24 17:47:45 2018 +0800
+
+    adding the links folder
+
+commit 3f152a1e696fb0b9b1934ec5c671ab37f10ad3be
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Sat Feb 24 00:58:31 2018 +0800
+
+    Add files via upload
+    
+    updated HTTP: added  kinds of HTTP headers
+
+commit 88b80da305c224647218b857b328fca277c47fe5
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Sat Feb 24 00:56:10 2018 +0800
+
+    Add files via upload
+    
+    added response message image
+
+commit 6adcb1011ad9a2fe7eedf02a7bdcd54f1b6966f3
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Fri Feb 23 03:08:52 2018 +0800
+
+    Added contents to /TOPICS/HTML/HTML5.docx
+
+commit 3c7e6936caeee4b6498343baec3118579e9a4c83
+Merge: 6b90118 93942bb
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Fri Feb 23 01:30:32 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179/WEBTECHLEC
+
+commit 6b901181a60e3634586db2a36437bf29aae6fb99
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Fri Feb 23 01:29:50 2018 +0800
+
+    document for HTML5
+
+commit 93942bb897a27a66bcfe4d4b183b9b84bc35cb5e
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Fri Feb 23 00:53:46 2018 +0800
+
+    added Request message (image)
+
+commit a2fba6b24085fb22cd6f9dfb177418870fa39cda
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Fri Feb 23 00:50:24 2018 +0800
+
+    added HTTP request message
+
+commit c611ec19a92761bf4832a9203b03f18bf6a77b61
+Author: 2164179mary <mary@gmail.com>
+Date:   Thu Feb 22 18:14:42 2018 +0800
+
+    updated v3
+
+commit d68fcecce8bed497059c5b36826d7855b3d42fa6
+Merge: 80a2f84 77004f4
+Author: 2164179mary <mary@gmail.com>
+Date:   Thu Feb 22 18:09:09 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179/WEBTECHLEC
+
+commit 77004f4f649f6d3aee428660585bc0b92622aa57
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Thu Feb 22 18:08:23 2018 +0800
+
+    editted TOPIC - World Wide Web
+
+commit 80a2f846efbe15694f8cab5944ea8639366eb1e1
+Merge: 25135a2 5fc0e28
+Author: 2164179mary <mary@gmail.com>
+Date:   Thu Feb 22 17:50:13 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179/WEBTECHLEC
+
+commit 25135a2a124b89396263e272db73048d58a0d59a
+Author: 2164179mary <mary@gmail.com>
+Date:   Thu Feb 22 17:49:49 2018 +0800
+
+    updated v2
+
+commit 5fc0e28f760fca2f0b7b781c125c46fdd01c1e65
+Author: Mary Ann Licudo <34298410+2164179mary@users.noreply.github.com>
+Date:   Thu Feb 22 16:14:01 2018 +0800
+
+    Home page introduction
+
+commit 98e463b5b651d432c611541cd9d60bf044dd3b44
+Author: Mary Ann Licudo <34298410+2164179mary@users.noreply.github.com>
+Date:   Thu Feb 22 15:33:24 2018 +0800
+
+    Delete jaja.PNG
+
+commit 43e2dd0dbe3bb081481833bf771ad0c63e677c8c
+Author: Mary Ann Licudo <34298410+2164179mary@users.noreply.github.com>
+Date:   Thu Feb 22 15:29:10 2018 +0800
+
+    try
+
+commit 554a88028a40a5feb35ea28bb4dd6d3ab9af9ad2
+Author: 2164179mary <mary@gmail.com>
+Date:   Thu Feb 22 15:27:17 2018 +0800
+
+    updated v1
+
+commit 09c79cdefc4b3df840b120cf4d9e037960a5d978
+Author: mary <mary@gmail.com>
+Date:   Thu Feb 22 15:16:17 2018 +0800
+
+    updated
+
+commit 2518e1853f77a42181f3a0ecbbadfc0e5b78f6fd
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Thu Feb 22 02:30:25 2018 +0800
+
+    Arranged the documents into one folder
+
+commit f59a7c95600b01fbe55c0353b740695e0881a16f
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Thu Feb 22 02:27:39 2018 +0800
+
+    Added the documents for Topic 1 - World Wide Web
+
+commit edb5f134709b2d0c31704ff5126ba2236d459e9b
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Wed Feb 21 17:16:16 2018 +0800
+
+    Add files via upload
+    
+    added information about https, standard methods
+
+commit aba6fc8f870e38b4cacc9dc79366be67ff2475c5
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Tue Feb 20 20:56:41 2018 -1200
+
+    updated browser wars and browsers definition
+
+commit 5a791c29a2dbdc05931d9c32ad827f7800eaf866
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Tue Feb 20 20:31:26 2018 -1200
+
+    browser wars
+
+commit 8f9a13528ffe79d1278d619bb14cf8bbb0058048
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Tue Feb 20 18:24:16 2018 -1200
+
+    updated
+
+commit 7a34cbafc75673e4162f90bc26c166920ec1a8ff
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Wed Feb 21 00:26:34 2018 +0800
+
+    few changes in the index.html and styles.css files
+
+commit 13c0080dd986f6170fd513045435f379557fe8c7
+Merge: 524af57 f036bed
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Tue Feb 20 23:23:14 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179/WEBTECHLEC
+
+commit 524af57132d48bb2f3a220c9ca26039d7381fdb1
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Tue Feb 20 23:22:29 2018 +0800
+
+    home page template
+
+commit f036beddc0eb5559da4adbbfa8f459da1fafceb7
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Sun Feb 18 21:22:01 2018 -1200
+
+    updated html summary and intro
+
+commit b486302586d489c4bb7d63f89a29981122e4f63c
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Sun Feb 18 21:20:08 2018 -1200
+
+    updated version history
+
+commit 0a6eb03413ca00430b6c7b7c8b45a9a0f101c042
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Sun Feb 18 21:59:17 2018 +0800
+
+    Version History of HTML
+
+commit 92540e21dbfb7ae05484451ae8f1a61d58cdd8db
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Sat Feb 17 23:18:29 2018 +0800
+
+    Summarized HTML not yet done
+
+commit 8a1fd40d52fcbed014d44a77276bccf67f25dc7e
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Sat Feb 17 01:06:31 2018 +0800
+
+    Add files via upload
+    
+    added HTTP 1.0, 1.1
+
+commit 71ea236f59abc59c4e62a5f4af62e9d8631a41b3
+Author: 2164194 <34298969+2164194@users.noreply.github.com>
+Date:   Fri Feb 16 01:40:32 2018 +0800
+
+    added HTTP 1.0
+    
+    to be continued
+
+commit 1a2101e57c3d141fd4f5569cd1c7d18012dc3d7e
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Wed Feb 14 11:13:12 2018 +0800
+
+    Notes for Lecture about the WWW
+
+commit fffefa0b55f5f2e9d6f3ebab6ad9159c6301fd37
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Tue Feb 13 22:03:19 2018 +0800
+
+    Essay Document
+
+commit 35c72c5ba5dfe2ec332586dce259179bb7da8ea2
+Author: Mary Ann Licudo <34298410+2164179@users.noreply.github.com>
+Date:   Wed Jan 24 21:37:45 2018 +0800
+
+    Initial commit

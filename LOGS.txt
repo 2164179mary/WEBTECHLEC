@@ -1,8 +1,127 @@
+commit e9149715f033891f82bd30faf1a44971cfc226c8
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 16:57:39 2018 +0800
+
+    adding the website folder
+
+commit bdb85993abaef5330ec0c58235c29bdcb0f34fc0
+Merge: 52ef9e7 5737034
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 16:36:15 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 5737034084b81ad8f9aa83dfe8535902d76ca590
+Author: Lorelie Mae Ferrer <34230616+LmpFerrer@users.noreply.github.com>
+Date:   Mon Feb 26 16:33:23 2018 +0800
+
+    a zip file containing all the files of the website
+
+commit 52ef9e760f7081e918869f575f575f8954b54374
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 16:31:49 2018 +0800
+
+    zip file containing all the website files
+
+commit d5ea572e4553dbf0eb533d97dd53971fb1860b86
+Merge: 9a29bb7 5ba238c
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 15:58:28 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 9a29bb7f7d150f8cfea863afad9e20a1122bc021
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 15:56:09 2018 +0800
+
+    Added the css for the AboutUs.html and topics.html
+
+commit 5ba238c65090c307f43842c0485c2611cc3f0c50
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Mon Feb 26 15:51:57 2018 +0800
+
+    References
+
+commit 495b9013ec556c30924673f90fd1761a79c90db3
+Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
+Date:   Mon Feb 26 15:46:40 2018 +0800
+
+    References
+
+commit dd15719b2ce5c6662656c41b58b3c81b178f8077
+Merge: 5eb9db0 2ded9de
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 15:14:00 2018 +0800
+
+    resolving some conflicts and updated and added html files
+
+commit 2ded9de21710909e7868b32ce5af67b55ea7ad30
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:37:19 2018 +0800
+
+    Updated version of topics.html
+
+commit b632e2a5816cfa26863a36aa7a634344f46749cc
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:30:58 2018 +0800
+
+    Added the images of the icons, and the "Topics.html"
+
+commit 88160f5438b6929be92e4d1a8c554f531d1f4a92
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:29:02 2018 +0800
+
+    Updated the AboutUs.html and changed the file location of "topics.html" to links.
+
+commit c3e61044fbc322a2b5b1046f1a3aa5dca4eacc02
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 14:03:35 2018 +0800
+
+    Updated Version of AboutUs.html
+
+commit 5e43cf6f395849290a89c10c150ebf5d59efeb69
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 13:50:52 2018 +0800
+
+    Added the AboutUs.html
+
+commit 0ce423c2255e7a19567c96bcc89c98f885741ca2
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 13:45:20 2018 +0800
+
+    Added images for the ABOUT US section.
+
+commit 02fb1cfe137d6c7c893dbd9ac179b849c5485f51
+Merge: 8552b0c e5be8a8
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 12:00:50 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 8552b0c7dc8e347b9233763f1ae1d5419a969a88
+Author: Jhen Rose <kimoais@gmail.com>
+Date:   Mon Feb 26 11:59:01 2018 +0800
+
+    Added the raw resources of the "Browser Wars" and the rendered version "Broswer Wars.png"
+
 commit e5be8a81de6bc64f8b640ff2f6e82c4daca10f67
 Author: Kimberly Lopez-2161055 <2161055@slu.edu.ph>
 Date:   Mon Feb 26 11:46:59 2018 +0800
 
     About us
+
+commit 5eb9db0f578599cf7be8ba70f96ee39ad4890c85
+Merge: 0e0715e 41f3a2c
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 10:01:06 2018 +0800
+
+    Merge branch 'master' of https://github.com/2164179mary/WEBTECHLEC
+
+commit 0e0715e727a1bdfc9c22f7565067abe5c7d110b7
+Author: Lmpf <2165944@slu.edu.ph>
+Date:   Mon Feb 26 09:55:21 2018 +0800
+
+    updated the topic3.html and styles.css
 
 commit 41f3a2cfb557547c29874efe44dd7dc1c84a3895
 Merge: 3bc5c3b 2b21bb2

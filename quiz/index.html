@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <title>CashFe</title>
+        <link rel="stylesheet" type="text/css" href="design.css">
+    </head>
+    <body>
+    <p id="result"></p>
+    <div class="compile">
+    <form id="questions" method="post">
+        <ol>
+            <li>
+                <div class="q1">
+                    <p>Question1</p></br>
+                    <input type="radio" name="q1" value="c" ><p id="answer1" >correct</p></br>
+                    <input type="radio" name="q1" value="w">answer2<br/></input>
+                    <input type="radio" name="q1" value="w">answer3<br/></input>
+                </div>
+            </li>
+            <li>
+            <div class="q2">
+                <p>Question2</p></br>
+                <input type="radio" name="q2" value="c"><p id="answer2" >correct</p></br>
+                <input type="radio" name="q2" value="w">answer2<br/></input>
+                <input type="radio" name="q2" value="w">answer3<br/></input>
+            </div>
+            </li>
+            <li>
+            <div class="q3">
+                <p>Question3</p></br>
+                <input type="radio" name="q3" value="w">answer1<br/></input>
+                <input type="radio" name="q3" value="c" id="a3" ><p id="answer3" >correct</p>
+                <input type="radio" name="q3" value="w">answer3<br/></input>
+            </div>
+            </li>
+            <li>
+            <div class="q4">
+                <p>Question4</p></br>
+                <input type="radio" name="q4" value="w">answer1<br/></input>
+                <input type="radio" name="q4" value="w">answer2<br/></input>
+                <input type="radio" name="q4" value="c" id="a4" ><p id="answer4" >correct</p>
+            </div>
+            </li>
+            <li>
+            <div class="q5">
+                <p id="ss">Question5</p></br>
+                <input type="radio" name="q5" value="w">answer1<br/></input>
+                <input type="radio" name="q5" value="w">answer2<br/></input>
+                <input type="radio" name="q5" value="c" id="a5" ><p id="answer5" >correct</p>
+            </div>
+            </li>
+        </ol>
+    </form>
+    </div>
+    <button type="button" onclick="submit()">next</button>
+        <script src = "script.js" async> </script>
+    </body>
+</html>
