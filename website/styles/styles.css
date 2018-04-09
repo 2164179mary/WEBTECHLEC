@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
 body {
     font-family: 'Roboto', Arial;
     font-size: 16px;
@@ -112,6 +114,118 @@ section * {
     width: 78%;
     position: relative;
     margin-left: 21%;
+}
+
+#html-intro,
+#html-browser,
+#html-5,
+#www-intro,
+#www-inrtroo,
+#www-internet,
+#www,
+#www-components,
+#www-how,
+#http-intro,
+#http-version,
+#http-codes,
+#http-works,
+#http-headers,
+#http-webdav,
+#css,
+#css-style,
+#css-statements,
+#css-prefrapol,
+#js,
+#js-grammar,
+#js-asynch,
+#js-ecma,
+#js-client,
+#js-dom,
+#js-datype {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+/* #html-intro h2 {
+    width: 35%;
+} */
+
+#html-intro,
+#html-browser,
+#html-5,
+#www-intro,
+#www-introo,
+#www-internet,
+#www,
+#www-components,
+#www-how,
+#http-intro,
+#http-version,
+#http-codes,
+#http-works,
+#http-headers,
+#http-webdav h3,
+#css,
+#css-style,
+#css-statements,
+#css-prefrapol,
+#js,
+#js-grammar,
+#js-asynch,
+#js-ecma,
+#js-client,
+#js-dom,
+#js-datype {
+    margin-top: 10px;
+}
+
+#html-5 h2 {
+    width: 20%;
+}
+
+#html-browser,
+#css-statements h2 {
+    width: 37%;
+    margin: 0 auto;
+}
+
+#html-browser h4 {
+    text-align: center;
+}
+
+#indent {
+    margin-left: 3em;
+}
+
+#indent li {
+    margin-left: 1.5em;
+}
+
+.center {
+    text-align: center;
+}
+
+.code {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border-left: 9px solid #077c9d;
+    background-color: #1d2731;
+    color: #fff;
+}
+
+.med {
+    width: 70%;
+    padding-left: 3em;
+    padding-top: 1em;
+}
+
+dl {
+    margin: 13px 0 13px 3em;
+}
+
+dl > dt {
+    padding: 15px 0 4px 0;
 }
 
 /* Menu Navigation */
@@ -496,20 +610,10 @@ header nav > ul > li > a:hover {
     color: #000;
 }
 
-#intro p {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.7em;
-    z-index: 1;
-}
 
 #intro video {
     width: 100%;
     height: 400px;
-}
-
-#hometopics {
-    background-color: #fef9f2;
 }
 
 #hometopics h2 {
@@ -518,8 +622,6 @@ header nav > ul > li > a:hover {
     margin: auto;
     text-transform:
 }
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 
 /* Topics in Home Page */
 
@@ -856,120 +958,6 @@ figure.topic-container:hover figcaption::before {
     padding-top: 5.7em;
 }
 
-
-
-#html-intro,
-#html-browser,
-#html-5,
-#www-intro,
-#www-inrtroo,
-#www-internet,
-#www,
-#www-components,
-#www-how,
-#http-intro,
-#http-version,
-#http-codes,
-#http-works,
-#http-headers,
-#http-webdav,
-#css,
-#css-style,
-#css-statements,
-#css-prefrapol,
-#js,
-#js-grammar,
-#js-asynch,
-#js-ecma,
-#js-client,
-#js-dom,
-#js-datype {
-    margin-top: 10px;
-    padding-left: 30px;
-}
-
-/* #html-intro h2 {
-    width: 35%;
-} */
-
-#html-intro,
-#html-browser,
-#html-5,
-#www-intro,
-#www-introo,
-#www-internet,
-#www,
-#www-components,
-#www-how,
-#http-intro,
-#http-version,
-#http-codes,
-#http-works,
-#http-headers,
-#http-webdav h3,
-#css,
-#css-style,
-#css-statements,
-#css-prefrapol,
-#js,
-#js-grammar,
-#js-asynch,
-#js-ecma,
-#js-client,
-#js-dom,
-#js-datype {
-    margin-top: 10px;
-}
-
-#html-5 h2 {
-    width: 20%;
-}
-
-#html-browser,
-#css-statements h2 {
-    width: 37%;
-    margin: 0 auto;
-}
-
-#html-browser h4 {
-    text-align: center;
-}
-
-#indent {
-    margin-left: 3em;
-}
-
-#indent li {
-    margin-left: 1.5em;
-}
-
-.center {
-    text-align: center;
-}
-
-.code {
-    width: 40%;
-    margin: 0 auto;
-    padding: 10px;
-    border-left: 9px solid #077c9d;
-    background-color: #1d2731;
-    color: #fff;
-}
-
-.med {
-    width: 70%;
-    padding-left: 3em;
-    padding-top: 1em;
-}
-
-dl {
-    margin: 13px 0 13px 3em;
-}
-
-dl > dt {
-    padding: 15px 0 4px 0;
-}
-
 /* Timeline */
 
 #html-version {
@@ -1300,20 +1288,6 @@ th {
 
 }
 
-/* Footer */
-
-footer {
-    background-color: #077c9d;
-    color: #ffff;
-    width: 100%;
-    position: absolute;
-}
-
-footer p {
-    font-size: 12px;
-    text-align: center;
-}
-
 #html-intro h2 {
     width: 30%;
     margin-bottom: 20px;
@@ -1385,8 +1359,20 @@ a.links {
     list-style: none;
 }
 
-img {}
-
 #js-asynch h2 {
     width: 70%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #077c9d;
+    color: #ffff;
+    width: 100%;
+    position: absolute;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
 }
