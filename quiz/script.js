@@ -25,7 +25,13 @@ var countQuestions = function() {
 }
 
 var printResult = function(correct){
-    var x = document.getElementById("answer2");
-    x.style.color = 'red';
+    
     document.getElementById("result").innerHTML = correct;
+    for(var i = 0; i < questionLength; i++){
+        var index = i+1;
+        var x = document.getElementById("answer"+index);
+        x.style.color = 'green';
+        var y = document.getElementById("answer"+index);
+        y.style.fontWeight = "1000";
+    }
 }
