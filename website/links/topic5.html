@@ -31,17 +31,20 @@
 
     <div class="container">
         <div class="content">
-            <section class="side-nav-http">
+            <section class="side-nav-js">
                 <h2>SUBTOPICS</h2>
                 <nav>
                     <ul>
-                        <li><a href="#css">Introduction</a></li>
-                        <li><a href="#css-style">(X) HTML Style Sheets</a></li>
-                        <li><a href="#css-statements">CSS Statements</a></li>
-                        <li><a href="##css-prefrapol">CSS Preprocessors, Frameworks, and Polyfills</a></li>
-                    </ul>
-                </nav>
-            </section>
+                        <li><a href="#js">Introduction</a></li>
+                        <li><a href="#js-grammar">Grammar</a></li>
+                        <li><a href="#js-datypes">Data Types</a></li>
+                        <li><a href="#js-asynch">Asynchronous JavaScript and XML</a></li>
+                        <li><a href="#js-ecma">JavaScript and EcmaScript</a></li>
+                        <li><a href="#js-client">Client-Side JavaScript Execution Environment</a>
+                        </li>
+                        <li><a href="#js-dom">Document Object Model (DOM)</a>
+                    </ul></nav>
+</section>
         </div>
     </div>
 
@@ -66,7 +69,7 @@
         </div>
     </section>
 
-    <section id="css">
+    <section id="js-grammar">
         <div class="container">
             <div class="content">
                 <h2>Grammar</h2>
@@ -77,13 +80,13 @@
                             <li>&emsp;&emsp;There are two ways to write a comment in javascript namely, a block comments and a line-ending comments.</li><br>
                             <li><strong>Block Comments</strong></li>
                             <li>
-                                <div class="code left">
+                                <div class="code center">
                                     <p class="center"><code>/* this is a Comment */</code></p>
                                 </div>
                             </li><br>
                             <li><strong>Line-ending comments</strong></li>
                             <li>
-                                <div class="code left">
+                                <div class="code center">
                                     <p class="center"><code>//this is a comment</code></p>
                                 </div>
                             </li><br>
@@ -91,22 +94,25 @@
                     </li>
                     <li><strong>Reserved Words</strong>
                         <ul class="no-style">
-                            <li>You can use different names in variables, but these reserved words are not among them.</li><br>
-                            <li>abstract</li>
-                            <li>boolean break byte</li>
-                            <li>case catch char class const continue</li>
-                            <li>else enum export extends</li>
-                            <li>false final finally float for function</li>
-                            <li>goto</li>
-                            <li>if implements import in instanceof int interface</li>
-                            <li>long</li>
-                            <li>native new null</li>
-                            <li>package private protected public</li>
-                            <li>return</li>
-                            <li>short static super switch synchronized</li>
-                            <li>this throw throws transient true try typeof</li>
-                            <li>var volatile void</li>
-                            <li>while withdebugger default delete do double</li>
+                            <li>You can use different names in variables, but these reserved words are not among them.
+                                <ul class="no-style">
+                                    <li>- <i>abstract</i></li>
+                                    <li>- <i>boolean break byte</i></li>
+                                    <li>- <i>case catch char class const continue</i></li>
+                                    <li>- <i>else enum export extends</i></li>
+                                    <li>- <i>false final finally float for function</i></li>
+                                    <li>- <i>goto</i></li>
+                                    <li>- <i>if implements import in instanceof int interface</i></li>
+                                    <li>- <i>long</i></li>
+                                    <li>- <i>native new null</i></li>
+                                    <li>- <i>package private protected public</i></li>
+                                    <li>- <i>return</i></li>
+                                    <li>- <i>short static super switch synchronized</i></li>
+                                    <li>- <i>this throw throws transient true try typeof</i></li>
+                                    <li>- <i>var volatile void</i></li>
+                                    <li>- <i>while withdebugger default delete do double</i></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li><br>
                     <li><strong>Numbers</strong>
@@ -114,18 +120,19 @@
                             <li>Numbers in Javascript is represented in a 64-bit floating point.</li><br>
                         </ul>
                         <ul>
-                            <li><b>Negative number</b> - a negative number can be expressed by adding “-” to a number. Eg. (-2, -3, -4).<br>
+                            <li><b>Negative number</b> - a negative number can be expressed by adding a
+                                <emp>minus/negative sign (-)</emp> to a number. <i>Eg. (-2, -3, -4)</i>.<br>
                                 <ul class="no-style center">
-                                    <li>image</li><br>
+                                    <li><br><img src="../images/js_exp1.png"></li>
                                     <li><i>&#42;In this figure the Math.sign() function was used. It returns the sign of the number that indicates whether it is a negative number (-1), a positive number (1), or a zero(0).</i>i></li><br>
-                                    <li>image</li><br>
+                                    <li><img src="../images/js_exp2.png"></li>
                                     <li><i>&#42;*Math.sign() function returns 1, it means that the number is positive</i></li><br>
                                 </ul>
                             </li>
                             <li><strong>NaN (Not a Number)</strong>
                                 <ul class="no-style">
                                     <li>Like the name implies, this is a value that is not considered a number. The function <strong>isNan(number)</strong> is used to determine whether a number is NaN or not.</li><br>
-                                    <li>image</li><br>
+                                    <li><img src="../images/js_exp3.png"></li><br>
                                 </ul>
                             </li>
                             <li><strong>Infinity</strong> - an infinite number.</li>
@@ -277,7 +284,7 @@
         </div>
     </section>
 
-    <section id="css-style">
+    <section id="js-datype">
         <div class="container">
             <div class="content">
                 <h2>Data Types</h2>
@@ -321,7 +328,7 @@
         </div>
     </section>
 
-    <section id="css-style">
+    <section id="js-asynch">
         <div class="container">
             <div class="content">
                 <h2>Asynchronous JavaScript and XML</h2>
@@ -340,7 +347,7 @@
         </div>
     </section>
 
-    <section id="css-style">
+    <section id="js-ecma">
         <div class="container">
             <div class="content">
                 <h2>JavaScript and EcmaScript</h2>
@@ -374,7 +381,7 @@
         </div>
     </section>
 
-    <section id="css-style">
+    <section id="js-client">
         <div class="container">
             <div class="content">
                 <h2>Client-Side JavaScript Execution Environment</h2>
@@ -402,13 +409,13 @@
                         </ul>
                     </li>
                 </ul>
-                <p><b>NTE: most of the APIs are accessed from scripts via the global object 'Window'</b></p>
+                <p><b>NOTE: most of the APIs are accessed from scripts via the global object 'Window'</b></p>
             </div>
         </div>
     </section>
 
 
-    <section id="css-prefrapol">
+    <section id="js-dom">
         <div class="container">
             <div class="content">
                 <h2>Document Object Model (DOM)</h2>
@@ -473,11 +480,79 @@
                 <p>&emsp;&emsp;- innerHTML, outerHTML, innerText, outerText</p>
                 <p>&emsp;&emsp;- references to oft-used document sections and collections: </p>
                 <p>&emsp;&emsp;&emsp;&emsp;- head, body, anchors, forms, images</p>
-                <h3>Event Handler Recognition Sample Code:</h3>
-
+                <br>
+                <h3>Event Propagation</h3>
+                <ul>
+                    <li><strong>NETSCAPE</strong> - inward ; capture phase</li>
+                    <li><strong>MS</strong> - if an event occurs in the target ; outer</li>
+                </ul><br>
+                <h3>STANDARD : 2 PHASES OF EVENT PROPAGATION</h3>
+                <ul>
+                    <li>Capturing phase (inner)</li>
+                    <li>Bubbling phase (outer)</li>
+                </ul><br>
+                <h3>EVENT HANDLING</h3>
+                <ul>
+                    <li>event propagation order (DOM - compliant browser)</li>
+                    <li>capturing phase</li>
+                    <li>at target</li>
+                    <li>bubbling phase</li>
+                </ul><br>
+                <p><strong>Event Handler Recognition Sample Code:</strong></p>
+                <p class="code med"><code>// given the ff. HTML code snippet...<br>
+                &lt;button id = ‘button’&gt; Click me &lt;/button&gt;<br>
+                <br>
+                <br>// and the ff. event handler function..<br>
+                function handler {<br>
+	            &emsp;&emsp;// event handler code<br>
+                }</code></p><br><br>
+                <p><strong>Method #1 INLINE</strong></p>
+                <p class="code med"><code>//not standardized<br>
+                   &lt;button id = ‘button’ onclick = ‘handler ()’&gt; Click Me &lt;/button&gt;
+                </code></p><br><br>
+                <p><strong>Method #2 (Pre-DOM L2); non-standard universal support</strong></p>
+                <p class="code med"><code>var button = document.getElementByID(‘button’);<br>
+                button.onclick = handler;
+                </code></p><br><br>
+                <p><strong>Method #3 (DOM L2 event registration)</strong> - standard & well-supported</p>
+                <p class="code med"><code>var button = document.querySelector (‘#button’);<br>
+	            button.add EventListener(‘click’, handler); //bubbling phase<br>
+                button.add EventListener(‘click’, handler);<br>
+                button.add EventListener(‘click’, handler, true); //capturing<br>
+                </code></p><br>
+                <p><b>Note:</b> In this method, the user can register more than 1 event handler and it can be on bubbling or capturing phase. To remove event handler use <b>removeEventListen();</b> and <b>detachEvent();</b></p><br>
+                <p><strong>Method #4 (MS - specific, non-standard, IEV5 - V10)</strong></p>
+                <p class="code med"><code>var button = document.getElementByID(‘click’);</code></p><br>
+                <p><b>Note:</b> In this method, the user can register more than 1 event handler and it can only be on bubble phase. To remove event handler use <b>detachEvent();</b> and <b>fireEvent();</b></p><br><br>
+                <p><strong>Cross-Browser Event Registration Sample Code:</strong></p>
+                <p class="code med"><code>var button = document.getElementByID(‘button’);<br>
+                if (button.addEventListener) {<br>
+	            &emsp;&emsp;button.addEventListener(‘click’, handler);<br>
+                } else if (button.attachEvent) {<br>
+	            &emsp;&emsp;button.attachEventListener(‘onClick’, handler);<br>
+                } else {<br>
+	            &emsp;&emsp;button.onClick = handler;<br>
+                    }</code></p>
+                <p>//determining the identity of the element handling the event</p>
+                <p><strong>For Method #1 Registration</strong></p>
+                <p class="code med"><code>
+                    function handler() {<br>
+		            &emsp;&emsp;var element = this;<br>
+                    &emsp;&emsp;&emsp;&emsp;// ‘this’ is the element handling the event<br>
+	                }<br>
+                </code></p><br><br>
+                <p><b>Determining Associated Information About The Event </b></p>
+                <p><strong>Method #1 Registration</strong></p>
+                <p class="code med"><code>
+                    &lt;button id = ‘button’ onClick = ‘Handler(window.event)’&gt; Click Me &lt;/button&gt;<br>
+                    <br>
+	                function (!e) e = window.event;<br>
+		            &emsp;&emsp;// ‘e’ now contains information about the event
+                </code></p><br><br>
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container">

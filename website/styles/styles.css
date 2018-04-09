@@ -103,7 +103,12 @@ section * {
 #css-statements,
 #css-prefrapol,
 #js,
-#js-grammar{
+#js-grammar,
+#js-asynch,
+#js-ecma,
+#js-client,
+#js-dom,
+#js-datype {
     width: 78%;
     position: relative;
     margin-left: 21%;
@@ -238,7 +243,7 @@ header nav > ul > li > a:hover {
     position: fixed;
     top: 4.3em;
     margin-left: -2em;
-    margin-top: 1.4em;
+    margin-top: 3em;
     padding: 1em 1em 1em .2em;
     font-size: 15px;
     background-color: #a8e2e5;
@@ -257,6 +262,8 @@ header nav > ul > li > a:hover {
     padding-bottom: 3px;
     color: #fff;
     text-shadow: -1.5px 1.5px 0 #404040;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .side-nav li > a {
@@ -269,16 +276,19 @@ header nav > ul > li > a:hover {
     margin-left: -10px;
     color: #1a1a1a;
     font-weight: 500;
+    margin: 2px 0;
 }
 
-.side-nav ul ul {
+.side-nav ul ul li {
     list-style-type: square;
+    margin: 2px 0;
 }
 
 .side-nav nav > ul > li > a:first-child:hover {
     color: #e52f37;
     text-shadow: -1.5px 1.5px 0 #ccc;
     font-weight: 600;
+    margin: 2px 0;
 }
 
 .side-nav nav > ul > li > a:first-child:active {
@@ -305,7 +315,7 @@ header nav > ul > li > a:hover {
     position: fixed;
     top: 4.3em;
     margin-left: -2em;
-    margin-top: 1.4em;
+    margin-top: 3em;
     padding: 1em 2em 1em 1.4em;
     font-size: 15px;
     background-color: #a8e2e5;
@@ -324,6 +334,8 @@ header nav > ul > li > a:hover {
     padding-bottom: 3px;
     color: #fff;
     text-shadow: -1.5px 1.5px 0 #404040;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .side-nav-www li > a {
@@ -336,10 +348,12 @@ header nav > ul > li > a:hover {
     margin-left: -10px;
     color: #1a1a1a;
     font-weight: 500;
+    margin: 2px 0;
 }
 
-.side-nav-www ul ul {
+.side-nav-www ul ul li {
     list-style-type: square;
+    margin: 2px 0;
 }
 
 .side-nav-www nav > ul > li > a:first-child:hover {
@@ -360,7 +374,7 @@ header nav > ul > li > a:hover {
     position: fixed;
     top: 4.3em;
     margin-left: -2em;
-    margin-top: 1.4em;
+    margin-top: 3em;
     padding: 1em 2em 1em 1.4em;
     font-size: 15px;
     background-color: #a8e2e5;
@@ -380,6 +394,8 @@ header nav > ul > li > a:hover {
     padding-bottom: 10px;
     color: #fff;
     text-shadow: -1.5px 1.5px 0 #404040;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .side-nav-http li > a {
@@ -392,10 +408,12 @@ header nav > ul > li > a:hover {
     margin-left: -10px;
     color: #1a1a1a;
     font-weight: 500;
+    margin: 2px 0;
 }
 
-.side-nav-http ul ul {
+.side-nav-http ul ul li {
     list-style-type: square;
+    margin: 2px 0;
 }
 
 .side-nav-http nav > ul > li > a:first-child:hover {
@@ -405,6 +423,66 @@ header nav > ul > li > a:hover {
 }
 
 .side-nav-http ul ul li a:hover {
+    color: #e52f37;
+    font-weight: bold;
+    text-shadow: -1.5px 1.5px 0 #ccc;
+}
+
+.side-nav-js {
+    width: 19%;
+    height: 55%;
+    position: fixed;
+    top: 4.3em;
+    margin-left: -2em;
+    margin-top: 3em;
+    padding: 1em 2em 1em 1.4em;
+    font-size: 15px;
+    background-color: #a8e2e5;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
+    -moz-box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
+    box-shadow: -4px 6px 7px 0px rgba(194, 192, 194, 1);
+}
+
+.side-nav-js h2 {
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: .3em;
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: 1.5px solid #fff;
+    padding-bottom: 10px;
+    color: #fff;
+    text-shadow: -1.5px 1.5px 0 #404040;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.side-nav-js li > a {
+    display: block;
+    transition: .2s ease-out;
+}
+
+.side-nav-js nav > ul > li {
+    margin-top: 4px;
+    margin-left: -10px;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin: 2px 0;
+}
+
+.side-nav-js ul ul li {
+    list-style-type: square;
+    margin: 2px 0;
+}
+
+.side-nav-js nav > ul > li > a:first-child:hover {
+    color: #e52f37;
+    text-shadow: -1.5px 1.5px 0 #ccc;
+    font-weight: 600;
+}
+
+.side-nav-js ul ul li a:hover {
     color: #e52f37;
     font-weight: bold;
     text-shadow: -1.5px 1.5px 0 #ccc;
@@ -694,12 +772,12 @@ figure.topic-container:hover figcaption::before {
 
 .banner {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
 
 .image-bg {
     z-index: 1;
-    padding: 13em 0 8em 0;
+    padding: 18em 0 12em 0;
     background-image: url(../images/sample.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -800,7 +878,12 @@ figure.topic-container:hover figcaption::before {
 #css-statements,
 #css-prefrapol,
 #js,
-#js-grammar {
+#js-grammar,
+#js-asynch,
+#js-ecma,
+#js-client,
+#js-dom,
+#js-datype {
     margin-top: 10px;
     padding-left: 30px;
 }
@@ -829,7 +912,12 @@ figure.topic-container:hover figcaption::before {
 #css-statements,
 #css-prefrapol,
 #js,
-#js-grammar {
+#js-grammar,
+#js-asynch,
+#js-ecma,
+#js-client,
+#js-dom,
+#js-datype {
     margin-top: 10px;
 }
 
@@ -1084,7 +1172,10 @@ label {
 #www-intro,
 #http-intro,
 #www-introo h2,
-#css h2 {
+#css h2,
+#js h2,
+#js-grammar h2,
+#js-datype h2 {
     width: 35%
 }
 
@@ -1128,7 +1219,9 @@ dt > a {
 
 }
 
-#http-codes h2 {
+#http-codes h2,
+#js-ecma h2,
+#js-dom h2 {
     width: 60%;
 }
 
@@ -1290,4 +1383,10 @@ a.links {
 
 .no-style {
     list-style: none;
+}
+
+img {}
+
+#js-asynch h2 {
+    width: 70%;
 }
