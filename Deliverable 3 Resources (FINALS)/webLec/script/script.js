@@ -1,3 +1,4 @@
+/*$("form#sign").on('submit', function)*/
 
 $("form#sign").on('submit', function(){
     var that = $(this),
@@ -48,3 +49,14 @@ $("form#sign").on('submit', function(){
 
     return false;
 });
+
+$(document).ready(function() {
+    $('#confirmPassword').keyup(function() {
+        if($(this).val() == $('#password').val()){
+            $('#ePassword').addClass('errorPassword');
+        } else {
+            $('#ePassword').removeClass('errorPassword');
+        }
+    });
+});
+

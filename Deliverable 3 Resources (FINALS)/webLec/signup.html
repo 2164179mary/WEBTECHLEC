@@ -9,23 +9,41 @@
 <body>
 <div id="divForm">
 <form id="sign" action="php/signup.php" method="post">
-    <label>Username:</label><br>
-    <input type="text" name="username" required="" oninvalid="this.setCustomValidity('Please Enter a valid username')"
-           oninput="setCustomValidity('')"><p id="errorUsername">Username unavailable</p>
-    <br><label>Password:</label><br>
-    <input id="password" type="password" name="password" required="" oninvalid="this.setCustomValidity('Please Enter a valid password')"
-           oninput="setCustomValidity('')"><br>
-    <label>Confirm Password:</label><br>
-    <input id="confirmPassword" type="password" name="Cpassword" required="" oninvalid="this.setCustomValidity('Please Enter a valid password')"
-           oninput="setCustomValidity('')"><span id="errorPassword">Did not match</span>
-    <br>
-    <label>First name:</label><br>
-    <input type="text" name="firstName" required="" oninvalid="this.setCustomValidity('Please Enter your first name')"
-           oninput="setCustomValidity('')"><br>
-    <label>Last name:</label><br>
-    <input type="text" name="lastName" required="" oninvalid="this.setCustomValidity('Please Enter your last name')"
-           oninput="setCustomValidity('')"><br>
-    <input type="submit" value="Sign up">
+    <div>
+        <label>Username:</label><br>
+        <input type="text" name="username" required="" oninvalid="this.setCustomValidity('Please Enter a valid username')"
+               oninput="setCustomValidity('')">
+        <span id="errorUsername">Username unavailable</span>
+    </div>
+
+    <div>
+        <br><label>Password:</label><br>
+        <input id="password" type="password" name="password" required="" oninvalid="this.setCustomValidity('Please Enter a valid password')"
+               oninput="setCustomValidity('')">
+    </div>
+
+    <div>
+        <label>Confirm Password:</label><br>
+        <input id="confirmPassword" type="password" name="Cpassword" required="" oninvalid="this.setCustomValidity('Please Enter a valid password')"
+               oninput="setCustomValidity('')">
+        <span id="ePassword" class="errorPassword">Please confirm your password</span>
+    </div>
+
+    <div>
+        <label>First name:</label><br>
+        <input type="text" name="firstName" required="" oninvalid="this.setCustomValidity('Please Enter your first name')"
+               oninput="setCustomValidity('')">
+    </div>
+
+    <div>
+        <label>Last name:</label><br>
+        <input type="text" name="lastName" required="" oninvalid="this.setCustomValidity('Please Enter your last name')"
+               oninput="setCustomValidity('')">
+    </div>
+
+    <div>
+        <input type="submit" value="Sign up">
+    </div>
 </form>
 </div>
 
