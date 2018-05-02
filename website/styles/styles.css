@@ -544,7 +544,7 @@ header nav > ul > li > a:hover {
 
 .side-nav-js {
     width: 19%;
-    height: 55%;
+    height: 30%;
     position: fixed;
     top: 4.3em;
     margin-left: -2em;
@@ -879,7 +879,7 @@ figure.topic-container:hover figcaption::before {
 
 .image-bg {
     z-index: 1;
-    padding: 18em 0 12em 0;
+    padding: 15em 0 10em 0;
     background-image: url(../images/sample.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -1374,6 +1374,7 @@ footer {
     color: #ffff;
     width: 100%;
     position: absolute;
+    margin-top: 3em;
 }
 
 footer p {
@@ -1401,4 +1402,8 @@ button {
     color: black;
     border: 2px solid #077c9d;
     float: right;
+}
+
+#footer {
+    margin-top: 10em;
 }
