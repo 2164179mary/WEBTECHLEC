@@ -22,13 +22,13 @@ if ($count == 1){
     $_SESSION['username'] = $username;
     $_SESSION['password'] = $password;
   //  echo "You are now logged in";
-    header('location: ../index.php');
+    header('location: ../home.php');
 }
 else {
     //header("location:../login.html");
     echo "<p> Invalid username or password </p>";
      echo "<form>
-    <input type=\"button\" name=\"log in\" onclick=\"location.href='../login.html';\" value=\"Log in again\">
+    <input type=\"button\" name=\"log in\" onclick=\"location.href='../index.html';\" value=\"Log in again\">
     </form>";
 }
     

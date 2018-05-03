@@ -10,8 +10,8 @@ if(isset($_POST['username']) &&
     $_password = get_post($conn, 'password');
     $_firstName = get_post($conn, 'firstName');
     $_lastName = get_post($conn, 'lastName');
-    $_query = "INSERT INTO account (username, password, fName, lName)
-VALUES ('$_username', '$_password', '$_firstName', '$_lastName');";
+    $_query = "INSERT INTO account (username, password, fName, lName, status)
+VALUES ('$_username', '$_password', '$_firstName', '$_lastName', 'pending');";
     $_result = $conn->query($_query);
     //setType($_type, $_username);
 
