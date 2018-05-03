@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["admin"])) {
+if (!isset($_SESSION["username"])) {
     include "admin.html";
 
 } else {
-   /* include "includes/menu.html";*/
+    include "index.html";
 }
 
 ?>
