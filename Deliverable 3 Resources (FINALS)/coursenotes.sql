@@ -29,6 +29,7 @@ CREATE TABLE `account` (
   `password` varchar(45) NOT NULL,
   `fName` varchar(45) NOT NULL,
   `lName` varchar(45) NOT NULL,
+  `status` enum('pending','accepted') DEFAULT NULL,
   PRIMARY KEY (`username`),
   UNIQUE KEY `username_UNIQUE` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -40,7 +41,7 @@ CREATE TABLE `account` (
 
 LOCK TABLES `account` WRITE;
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` VALUES ('kim','1234','Kim','Kim');
+INSERT INTO `account` VALUES ('1','1','asdfdas','asdfdas','pending'),('user1','user1','jkajka','jhasjha','pending'),('user2','123123','asdfkjadf','asdlkfsdaklf','pending');
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-02 20:10:04
+-- Dump completed on 2018-05-03 10:43:56
