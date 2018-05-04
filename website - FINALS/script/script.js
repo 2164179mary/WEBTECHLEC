@@ -40,35 +40,48 @@ var printResult = function (correct) {
     }
 }
 
-function dropdownMenu() {
-    var dropdown = document.getElementById("dropdownClick");
-    if (dropdown.className === "topnav") {
-        dropdown.className += " responsive";
-    } else {
-        dropdown.className = "topnav";
-    }
-};
+var lastId,
+    topMenu = $("#mainNav"),
+    topMenuHeight = topMenu.outerHeight() + 1,
+    menuItems = topMenu.find("a"),
+    scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) {
+            return item;
+        }
+    });
 
-(function ($) { // Begin jQuery
-    $(function () { // DOM ready
-        // If a link has a dropdown, add sub menu toggle.
-        $('nav ul li a:not(:only-child)').click(function (e) {
-            $(this).siblings('.nav-dropdown').toggle();
-            // Close one dropdown when selecting another
-            $('.nav-dropdown').not($(this).siblings()).hide();
-            e.stopPropagation();
-        });
-        // Clicking away from dropdown will remove the dropdown class
-        $('html').click(function () {
-            $('.nav-dropdown').hide();
-        });
-        // Toggle open and close nav styles on click
-        $('#nav-toggle').click(function () {
-            $('nav ul').slideToggle();
-        });
-        // Hamburger to X toggle
-        $('#nav-toggle').on('click', function () {
-            this.classList.toggle('active');
-        });
-    }); // end DOM ready
-})(jQuery); // end jQuery
+menuItems.click(function (e) {
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+    $("html, body")
+        .stop()
+        .animate({
+                scrollTop: offsetTop
+            },
+            850
+        );
+    e.preventDefault();
+});
+
+$(window).scroll(function () {
+    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+    var cur = scrollItems.map(function () {
+        if ($(this).offset().top < fromTop) return this;
+    });
+
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        menuItems
+            .parent()
+            .removeClass("active")
+            .end()
+            .filter("[href=#" + id + "]")
+            .parent()
+            .addClass("active");
+    }
+});
