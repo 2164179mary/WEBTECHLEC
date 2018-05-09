@@ -1381,12 +1381,13 @@ footer p {
     text-align: center;
 }
 
-button:active, button:hover {
+button:active,
+button:hover {
     background-color: #ffffff;
-			color: white;
-			transition: 0.3s;
-			background-color: #077c9d;
-			letter-spacing: 2px;
+    color: white;
+    transition: 0.3s;
+    background-color: #077c9d;
+    letter-spacing: 2px;
 }
 
 button {
@@ -1401,4 +1402,45 @@ button {
     color: black;
     border: 2px solid #077c9d;
     float: right;
+}
+
+.side nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+}
+
+.side nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin: auto;
+}
+
+.side > nav > ul > li:nth-last-child(4) {
+    margin-top: 10em;
+}
+
+.side > nav > ul > li > a {
+    margin-left: 4em;
+    margin-bottom: 1em;
+    padding: 3px 10px;
+    display: block;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 17px;
+}
+
+.side nav > ul > li > a:hover {
+    color: #077c9d;
+}
+
+.side > nav > ul > .active a {
+    color: #077c9d;
+    border-left: 5px solid #077c9d;
 }
