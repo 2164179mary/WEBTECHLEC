@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseNotes</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <img alt="logo" src="../images/CourseNotes%20Logo%20.png">
+                </div>
+                <div class="nav-menu right">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html"><img src="../images/home.png">Home</a></li>
+                            <li><a href="./topics.html"><img src="../images/pin.png">Topics</a></li>
+                            <li><a href="./exercises.html"><img src="../images/mind.png">Exercises</a></li>
+                            <li><a href="./AboutUs.html"><img src="../images/group.png">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--
+    <div class="container">
+        <div class="content">
+            <section class="side-nav-www">
+                <h2>SUBTOPICS</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#www-introo">Introduction</a></li>
+                        <li><a href="#www">WWW</a></li>
+                        <li><a href="#www-components">Components of the Web</a></li>
+                        <li><a href="#www-how">How The Web Works</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </div>
+    -->
+    <div class="container">
+        <div class="content">
+            <div class=side>
+                <nav>
+                    <ul id="mainNav">
+                        <li class="active"><a href="#www-introo">Introduction</a></li>
+                        <li><a href="#www">WWW</a></li>
+                        <li><a href="#www-components">Components of the Web</a></li>
+                        <li><a href="#www-how">How The Web Works</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="image-bg">
+        <div class="container">
+            <div class="content">
+                <div class="banner">
+                    <h1>World Wide Web</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="www-introo">
+        <div class="container">
+            <div class="content">
+                <h2>Introduction</h2>
+                <p>&emsp;&emsp;The <strong>World Wide Web (WWW)</strong> started way back in <strong>1989</strong> when <strong>Sir Tim Berners-Lee</strong>, a computer scientist in CERN, wanted to find an easier way to share information to his co scientist. Before he invented the WWW, the different scientists working in CERN find it difficult to share and access their researches to their co-workers. As a way to solve this issue, he wrote his proposal entitled <strong>“Information Management: A Proposal”</strong>. Within this document is his vision for what would soon be known as the World Wide Web.</p>
+                <img alt="tim burners-lee" src="../images/timburners1.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="www-internet">
+        <div class="container">
+            <div class="content">
+                <h3>The Internet</h3>
+                <p>&emsp;&emsp;Many people interchange the terms “Internet” and “Web”. The internet and the web are two separate entities. Internet is short for International Network, which is a global network of networks. In simpler terms, the internet is a large collection of devices connected together to share information and have electronic communication.</p>
+                <p>&emsp;&emsp;The internet composed of three platforms:</p>
+                <div id="indent">
+                    <ul>
+                        <li><b>Host</b> – these are devices connected to the internet.</li>
+                        <li><b>Interconnection media</b> – these are platform that may either be wireless or wired.</li>
+                        <li><b>Protocols</b> – these governs how hosts communicate over the interconnection media.</li>
+                    </ul>
+                </div>
+                <p>&emsp;&emsp;The internet serves as a platform to build or run an application. One of the most successful application ever develop that run on-top of the internet is the WWW.</p>
+                <p>&emsp;&emsp;Other application that uses the infrastructure of the internet:</p>
+                <div id="indent">
+                    <ul>
+                        <li>Email </li>
+                        <li>Distributed File System</li>
+                        <li>Online Games</li>
+                        <li>Remote log-in</li>
+                        <li>VoIP &#40;Voice over IP&#41 based application</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="www">
+        <div class="container">
+            <div class="content">
+                <h2>World Wide Web</h2>
+                <p>&emsp;&emsp; <strong>WWW</strong> or <strong>web</strong> for short is a collection of web resources and application that allows people to access the resources through the internet. The term <strong>resources</strong> are used to refer to all types of information circulating to and from the web.</p>
+                <p>&emsp;&emsp;The web uses a <strong>client server</strong> architecture. The <strong>server</strong> is the one providing the service and the <strong>client</strong> is the one consuming the services provided by the server.</p><br>
+                <h3>Server</h3>
+                <p>&emsp;&emsp;A
+                    <strong>web server</strong> is a computer that has a continuous connection to the internet. It has two roles:</p>
+                <div id="indent">
+                    <ol>
+                        <li>Houses and host the web resources</li>
+                        <li>Waits for clients to request for resources, processes the requests, and then sends the resources back to the clients. </li>
+                    </ol>
+                </div>
+                <p>&emsp;&emsp;It’s possible to have no <strong>web servers</strong>, in cases like this the servers are called web services. These are applications that provide services that can be accessed by the web.</p><br>
+                <h3>Client</h3>
+                <ul>
+                    <li><strong>Web Browsers</strong> – these are the most common client used in the web. The browsers are used to request resources to the web servers.</li>
+                    <li><strong>Spider</strong> – these are clients that crawls and retrieves information from the web without interaction.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="www-components">
+        <div class="container">
+            <div class="content">
+                <h2>Components of the Web</h2>
+                <p>&emsp;&emsp;There are three technologies created by Tim Berners-Lee that serves as the components of the web.</p>
+                <dl>
+                    <dd>
+                        <h3>1.&emsp;HTTP (Hypertext Transfer Protocol)</h3>
+                    </dd>
+                    <dt>-	It’s a protocol that serves as the communication language between the client and the web server. It follows a request-response model. If the client request for a resource, the server would then send a response back to the client containing the resource requested.</dt>
+                    <dt>For more details go to our <a id="lin k" href="topic2.html">HHTP page</a>.
+                    </dt>
+                    <dd>
+                        <h3>2.&emsp;URL (Uniform Resource Locator)</h3>
+                    </dd>
+                    <dt>-	The URL serves as the address identifier for the location of a particular resource on the web. </dt>
+                    <dt>Example of a URL:<br><code id="http">http://www.samplesite.com/study/text.html</code></dt>
+                    <dt><strong>http</strong> - this defines the protocol or the scheme stated in the URL. There are other types of protocols such as FTP, telnet, mailto, file, etc. However, http is the protocol used for communication on the web.</dt>
+                    <dt><strong>www.samplesite.com</strong> – this defines the location of the host that contains the resources. Note that a server may house more than one host which holds different resources.  A host can either be in domain name form or as an IP address. www.samplesite.com is an example of a domain name. In order to access the host, the domain name must be converted to an IP address (eg. 198.168.30.17). This task is processed by a DNS (Domain Name Server) which then acts as a phone book that maps a domain name to its equivalent IP address.</dt>
+                    <dt><strong>&#47;site.text.html</strong> – this defines the resource path that is being accessed.</dt>
+                </dl>
+                <p id="note"><b>NOTE:</b> URI (Uniform Resource Identifier) and the URL are two different things. A URL without a protocol is called a URI. //change color</p>
+                <dl>
+                    <dd>
+                        <h3>3.&emsp;HTML (Hypertext Markup Language)</h3>
+                    </dd>
+                    <dt>-	The resources accessed to and from the web are written in HTML. It is composed of elements that is translated by the browser into textual form in order to be viewed by the user. The main feature of the HTML is its use of hypertext. With this, a user can create links to connect to other resources.  By doing so, a user can jump from one resource to another resource in the web.</dt>
+                    <dt>For more details go to our <a id="lin k" href="topic3.html">HTML page</a></dt>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section id="www-how">
+        <div class="container">
+            <div class="content">
+                <h2>How the web works</h2>
+                <p>&emsp;&emsp;One day, a boy named Percy wanted to research for his chemistry project. He booted up his computer and opened his web browser. He entered the URL <code>“http://www.learningchem.com/chem.html”</code> into his browser. Unknown to Percy, the browser follows the address indicated in the URL and sends a message using the HTTP protocol in order to request a resource from the destination server. The server would then send a reply containing the requested resource written in HTML. The browser would receive the reply and translate the HTML into its textual form that would be viewed by Percy as a web page. Within the web page, Percy clicked on a link for more related information. The browser would again send a request message using the URL specified in the link as an address to the location of the resource in the server. The server would send back a reply message containing the resource requested and the browser would translate the HTML into a web page. The process repeats itself as Percy access a link or another URL forming a web-like connection of different resources.</p>
+            </div>
+        </div>
+    </section>
+    <script src="../script/script.js" async></script>
+    <footer>
+        <div class="container">
+            <div class="content">
+                <p>&copy;<i> Copyright 2018. <a href="index.html"><b>CourseNotes</b></a>. All Rights Reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
