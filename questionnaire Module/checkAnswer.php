@@ -3,12 +3,16 @@ $score = 0;
 include 'header.php';
 //session_start();
 include 'requireSession.php';
-$_SESSION['answered'] = "yes";
+//$_SESSION['answered'] = "yes";
 require_once 'connectDB.php';
 $conn = new mysqli($lh, $un, $pw, $db);
 if ($conn->connect_error) die($conn->connect_error);
 extract ($_POST);
 extract ($_GET);
+$_SESSION['testID'] = $testID;
+/*echo "<div class='top'>";
+echo $_SESSION['testID'];
+echo "</div>";*/
 $query = "select * from question where testID=$testID";
 $result = $conn->query($query);
 if (!$result) die($conn->error);
@@ -27,7 +31,7 @@ for($i = 0; $i < $rows; ++$i){
     }
 }
 echo "<div class='top'>";
-echo $_SESSION['answered'];
+//echo $_SESSION['answered'];
 echo <<<_END
 <p id = "results">You got a score of $score out of $rows</p>
 _END;

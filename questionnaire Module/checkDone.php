@@ -30,7 +30,7 @@ if($rows == 1){
     echo "</div>";
     include 'footer.php';
 } else {
-    header("Location: ./question.php?testID=$testID");
+    header("Location: question.php?testID=$testID");
 }
 /*require_once 'connectDB.php';
 $username = $_SESSION['username'];

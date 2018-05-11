@@ -3,14 +3,24 @@
     include 'header.php';
 //session_start();
     include 'requireSession.php';
-    if (isset($_SESSION['yes'])) {
+   /* if (isset($_SESSION['yes'])) {
         header('Location: exercise.php');
         return;
-    }
+    }*/
     require_once 'connectDB.php';
     extract($_POST);
     extract($_GET);
-    extract($_SESSION);
+    //extract($_SESSION);
+ if (isset($_SESSION['testID'])) {
+     if($_SESSION['testID'] == $testID){
+         /*echo "<div class='top'>";
+         echo "<p>HELLO</p>";
+         echo $_SESSION['testID'];
+         echo $testID;
+         echo "</div>";*/
+         header('Location: exercise.php');
+     }
+}
     $conn = new mysqli($lh, $un, $pw, $db);
     if ($conn->connect_error) die($conn->connect_error);
     $query = "select * from question where testID = $testID
@@ -27,15 +37,33 @@ order by rand()";
         $row = $result->fetch_array(MYSQLI_ASSOC);
         $id = $row['id'];
         $question = $row['question'];
-        $choiceA = $row['choiceA'];
-        $choiceB = $row['choiceB'];
-        $choiceC = $row['choiceC'];
-        $answer = $row['answer'];
-        $inputA = "<input type='radio' name='q$id' value='w' required>$choiceA</br></input>";
-        $inputB = "<input type='radio' name='q$id' value='w' required>$choiceB</br></input>";
-        $inputC = "<input type='radio' name='q$id' value='w' required>$choiceC</br></input>";
-        $inputAnswer = "<input id='answer$id' type='radio' name='q$id' value='c' required>$answer</br></input>";
-        $choices = array($inputA, $inputB, $inputC, $inputAnswer);
+
+        $choices = array();
+
+        if(isset($row['choiceA'])){
+            $choiceA = $row['choiceA'];
+            $inputA = "<input type='radio' name='q$id' value='w' required>$choiceA</br></input>";
+            array_push($choices, $inputA);
+        }
+
+        if(isset($row['choiceB'])){
+            $choiceB = $row['choiceB'];
+            $inputB = "<input type='radio' name='q$id' value='w' required>$choiceB</br></input>";
+            array_push($choices, $inputB);
+        }
+
+        if(isset($row['choiceC'])){
+            $choiceC = $row['choiceC'];
+            $inputC = "<input type='radio' name='q$id' value='w' required>$choiceC</br></input>";
+            array_push($choices, $inputC);
+        }
+
+        if(isset($row['answer'])){
+            $answer = $row['answer'];
+            $inputAnswer = "<input id='answer$id' type='radio' name='q$id' value='c' required>$answer</br></input>";
+            array_push($choices, $inputAnswer);
+        }
+
         shuffle($choices);
 
         echo "<li>";
