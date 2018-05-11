@@ -58,8 +58,8 @@ CREATE TABLE `question` (
   `testID` int(40) NOT NULL,
   `question` varchar(200) NOT NULL,
   `choiceA` varchar(200) NOT NULL,
-  `choiceB` varchar(200) NOT NULL,
-  `choiceC` varchar(200) NOT NULL,
+  `choiceB` varchar(200) DEFAULT NULL,
+  `choiceC` varchar(200) DEFAULT NULL,
   `answer` varchar(200) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `errter_idx` (`testID`),
@@ -73,7 +73,7 @@ CREATE TABLE `question` (
 
 LOCK TABLES `question` WRITE;
 /*!40000 ALTER TABLE `question` DISABLE KEYS */;
-INSERT INTO `question` VALUES (1,1,'What is my name','Hello','World','Name','Kim'),(2,1,'Who killed Voldemort','Hermione','Ron','Draco','Harry'),(3,1,'The boy who lived','Draco','Ron','Neville','Harry'),(4,1,'Voldermort\'s snake','me','you','him','Nagini'),(5,1,'My house','Griffindor','Slytherin','Hufflepuff','ravenclaw'),(6,2,'My lastname','potter','jackson','nothing','lopez'),(7,2,'Harry\'s mother','petunia','me','minerva','lily'),(8,2,'Harry\'s father','sirius','lupin','pettigrew','james');
+INSERT INTO `question` VALUES (1,1,'What is my name','Hello','World','Name','Kim'),(2,1,'Who killed Voldemort','Hermione','Ron','Draco','Harry'),(3,1,'The boy who lived','Draco','Ron','Neville','Harry'),(4,1,'Voldermort\'s snake','me','you','him','Nagini'),(5,1,'My house','Griffindor','Slytherin','Hufflepuff','ravenclaw'),(6,2,'My lastname','potter','jackson','nothing','lopez'),(7,2,'Harry\'s mother','petunia','me','minerva','lily'),(8,2,'Harry\'s father','sirius','lupin','pettigrew','james'),(9,2,'I am a girl','False',NULL,NULL,'True');
 /*!40000 ALTER TABLE `question` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -102,6 +102,7 @@ CREATE TABLE `result` (
 
 LOCK TABLES `result` WRITE;
 /*!40000 ALTER TABLE `result` DISABLE KEYS */;
+INSERT INTO `result` VALUES ('loco',1,0,5),('loco',2,2,3),('poco',1,1,5),('poco',2,4,4);
 /*!40000 ALTER TABLE `result` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,4 +140,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-11  0:49:23
+-- Dump completed on 2018-05-11 21:31:00
