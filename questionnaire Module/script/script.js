@@ -22,14 +22,6 @@ $("form#sign").on('submit', function(){
 
     });
 
-    that.find('[type="email"]').each(function(index, value){
-        var that = $(this),
-            name = that.attr('name'),
-            value = that.val();
-        data[name] = value;
-
-    });
-
     that.find('[name="password"]').each(function(index, value){
         var that = $(this),
             name = that.attr('name'),

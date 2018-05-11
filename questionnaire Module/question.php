@@ -23,6 +23,10 @@
 }
     $conn = new mysqli($lh, $un, $pw, $db);
     if ($conn->connect_error) die($conn->connect_error);
+
+$conn2 = new mysqli($lh, $un, $pw, $db);
+if ($conn2->connect_error) die($conn2->connect_error);
+
     $query = "select * from question where testID = $testID
 order by rand()";
     $result = $conn->query($query);
@@ -65,6 +69,7 @@ order by rand()";
         }
 
         shuffle($choices);
+        $size = sizeof($choices);
 
         echo "<li>";
         echo "<p>$question</p>";
@@ -73,7 +78,6 @@ order by rand()";
             echo <<<_END
         $choice
 _END;
-
         }
         echo "</div>";
         echo "</li>";
@@ -82,6 +86,19 @@ _END;
     echo "</ol>";
     echo "<div>";
     echo "<button type = 'submit' name = 'log_in_user'>Submit</button>";
+/*if($size == 2){
+      =]]= = "INSERT INTO answers (testID, questionID, choiceA, choiceB, question)
+VALUES ('$testID', '$id', \"$choices[0]\", \"$choices[1]\", \"$question\")";
+    echo "KIM";
+} else if($size == 4){
+    $query2 = "INSERT INTO answers (testID, questionID, choiceA, choiceB, choiceC, choiceD, question)
+VALUES ('$testID', '$id', \"$choices[0]\", \"$choices[1]\", \"$choices[2]\", \"$choices[3]\", '$question')";
+    echo "mo";
+    echo $choices[0];
+}
+$result2 = $conn2->query($query2);
+if (!$result2) die($conn2->error);*/
+
 include 'footer.php';
 ?>
 

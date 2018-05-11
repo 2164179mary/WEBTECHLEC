@@ -25,7 +25,7 @@ if($rows == 1){
     echo "<p>You have already answered the exam</p>";
     echo "Score: ". $row['score']."/".$row['total']."</br>";
     $total = $row['total'];
-    echo "<a href='viewAnswer.php'>View Your Answer</a></br>";
+    //echo "<a href='viewAnswers.php?testID=$testID'>View Your Answer</a></br>";
     echo "<a href='viewRanks.php?testID=$testID&total=$total'>View Ranks</a>";
     echo "</div>";
     include 'footer.php';
