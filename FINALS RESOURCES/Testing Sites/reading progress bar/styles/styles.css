@@ -255,7 +255,7 @@ dl > dt {
 }
 
 .nav-menu {
-    width: 50%;
+    width: 70%;
 }
 
 .logo {
@@ -273,40 +273,15 @@ a {
     text-decoration: none;
 }
 
-#link {
-    color: #077c9d;
-
-}
-
-#link:hover {
-    text-shadow: -1px 1px 0 #bfbfbf;
-    letter-spacing: 2px;
-}
-
-#active {
-    color: #e52f37;
-
-}
-
 header {
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
     background: #2ca7d9;
-    transition: 0.5s;
     color: #fff;
-    padding: 12px 10px 7px 0;
-    box-shadow: 0 0 13px #000;
-}
-
-header h3 {
-    font-family: Georgia;
-    margin: 0;
-}
-
-header h3 a {
-    color: #fff;
+    padding: 3px 10px 0 0;
+    box-shadow: 0 0 10px 0 #000;
 }
 
 header nav {
@@ -320,34 +295,67 @@ header nav > ul {
 
 header nav > ul > li {
     display: inline-block;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 7px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 1px;
 }
 
-header nav > ul > li.active a {
-    color: #FFF;
+/*header nav > ul > li:nth-of-type(1) {
+    margin-left: 1em;*/
+
+nav.menus ul li {
+    margin-top: -4em;
 }
 
 header nav > ul > li > a {
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: bold;
-    transition: 0.5s;
     line-height: 3em;
+    letter-spacing: 1px;
 }
 
 header nav > ul > li > a > img {
-    height: 1.6em;
-    padding-top: 10px;
+    height: 1.5em;
+    padding-top: 4px;
     padding-right: 6px;
+    top: 3px;
+    position: relative;
 }
 
-header nav > ul > li > a:hover {
-    color: #fff;
-    letter-spacing: 4px;
+header nav > ul > li > a:hover,
+a:focus {
+    font-weight: bold;
+    border-bottom: 4px #fff solid;
+    padding-bottom: .5em;
+    letter-spacing: 3px;
+    z-index: -1;
 }
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+.login {
+    margin-top: -13px;
+    float: right;
+    margin-right: 2em;
+}
+
+.login a:hover {
+    border-bottom: none;
+}
+
+.login ul li a {
+    font-size: 14px;
+    text-transform: none;
+}
+
+.login ul li a:fover {
+    letter-spacing: 3px;
+    border-bottom: none;
+}
+
 
 /* Side Navigation */
 
@@ -1410,7 +1418,7 @@ button {
     left: 0;
     width: 200px;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .side nav > ul {

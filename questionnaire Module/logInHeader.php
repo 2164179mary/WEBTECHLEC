@@ -24,7 +24,7 @@
                         <li><a href="exercise.php"><img src="images/mind.png">Exercises</a></li>
                         <li><a href="links/AboutUs.html"><img src="images/group.png">About Us</a></li>
                         <li><a href="loginForm.php">Log in</a></li>
-                        <li><a href="signup.html">Sign up</a></li>
+                        <li><a href="signupForm.php">Sign up</a></li>
                     </ul>
                 </nav>
             </div>

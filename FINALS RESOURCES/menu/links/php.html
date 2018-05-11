@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CourseNotes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.ico">
+    <link rel="Stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <img alt="logo" src="../images/CourseNotes%20Logo%20.png">
+                </div>
+                <div class="nav-menu right">
+                    <nav class="login">
+                        <ul>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Signup</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav-menu right">
+                    <nav class="menus">
+                        <ul>
+                            <li><a href="index.html"><img src="../images/home.png">Home</a></li>
+                            <li><a href="../links/topics.html"><img src="../images/pin.png">Topics</a></li>
+                            <li><a href="../links/exercises.html"><img src="../images/mind.png">Exercises</a></li>
+                            <li><a href="../links/AboutUs.html"><img src="../images/group.png">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--
+    <div class="container">
+        <div class="content">
+            <div class=side>
+                <nav>
+                    <ul id="subNavi">
+                        <li class="active"><a href="#js">Introduction</a></li>
+                        <li><a href="#jss">WWW</a></li>
+                        <li>
+                            <a href="#jsss">Components of the Web</a></li>
+                        <li><a href=" #www-how ">How The Web Works</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    -->
+    <section class="image-bg topics ">
+        <div class="container ">
+            <div class="content ">
+                <div class="banner ">
+                    <div class="col-12 t-content ">
+                        <h1>PHP</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="php " class="size spacing ">
+        <div class="container ">
+            <div class="content ">
+                <h2>Introduction</h2>
+                <h3>PHP : Hypertext Processor</h3>
+                <p>&emsp;&emsp;A general purpose scripting language use for web development and can be embedded into HTML. Its a dynamic programming language that can connect to the databases</p>
+                <p><i>Sample php in html file</i></p>
+                <p class="code med "><code>
+                    &lt;!DOCTYPE HTML&gt;<br>
+                    &lt;html&gt;<br>
+                    &emsp;&emsp;&lt;head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Sample&lt;/title&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;/head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;body&gt;<br>
+                    <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;?php<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo "Hi! ";<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;?&gt;<br>
+                    <br>
+                    &emsp;&emsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+
+                </code></p>
+                <p class="center">The opening tag for php is &lt;?php to be close by the ?&gt; tag while echo tag is used to output data on screen.</p><br><br>
+                <ol type="I">
+                    <li><strong>COMMENT</strong></li>
+                    <ul class="no-style">
+                        <li>
+                            <div class="code">
+                                <p><code>//This is a one line comment<br><br>
+                                <br>/*<br>&emsp;&emsp;&emsp;&emsp;This is a<br>&emsp;&emsp;&emsp;&emsp;block comment */</code></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <li><strong>SYNTAX</strong></li>
+                    <ul class="no-style">
+                        <li>
+                            <p>PHP commands ends with a <b>semicolon</b>.</p>
+                        </li>
+                        <li>
+                            <div class="code center">
+                                <p class="center"><code>echo “Hello World”;</code></p>
+                            </div>
+                        </li>
+                        <li>Without the semicolon, PHP will interpret the other lines as a whole statement which would lead to errors.</li><br>
+                        <li><b>&#36;</b> - PHP uses the dollar sign for all variables that will be declared.</li>
+                        <li>
+                            <p class="code med "><code>
+                            &emsp;&emsp;&lt;?php<br>
+                            &emsp;&emsp; &emsp;&emsp;$_name = “Web Technologies”;   //this is a string<br>
+                            &emsp;&emsp; &emsp;&emsp;Echo $_name;<br>
+                            &emsp;&emsp;?&gt; <br>
+                            </code></p>
+                        </li>
+                    </ul>
+                    <li><strong>VARIABLES</strong></li>
+                    <ul class="no-style">
+                        <li>To declare a <i>string variable </i>you need first the dollar sign&#40;&#36;&#41; and the variable name like : &#36;user and after that the string should be placed on a quotation marks.</li>
+                        <li>
+                            <div class="code center">
+                                <p class="center"><code>&#36;_user = “Mary Ann”;</code></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Also, you can declare a variable with another variable</p>
+                            <ul class="no-style">
+                                <li><b>Numeric Variable</b><br>
+                                    <ul class="no-style">
+                                        <li>&#36;_integer = 15;</li>
+                                        <li>&#36;_float = 15.5;</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Rules for naming a variable:</strong><br>
+                                    <ol type="1">
+                                        <li>A variable must start with a letter of the alphabet or the underscore “_”.<br>
+                                            <ul class="no-style">
+                                                <li>$hello //correct</li>
+                                                <li>$12hello //wrong</li>
+                                                <li>$_hello //correct</li>
+                                            </ul>
+                                        </li>
+                                        <li>A variable can only contain the symbol underscore. Other symbols are not recommended.<br>
+                                            <ul class="no-style">
+                                                <li>$*hello //wrong</li>
+                                                <li>$_12hello //correct</li>
+                                            </ul>
+                                        </li>
+                                        <li>When a variable composes of two words, do no use whitespace rather use an underscore..<br>
+                                            <ul class="no-style">
+                                                <li>$_hello world //wrong</li>
+                                                <li>$_hello_world //correct</li>
+                                            </ul>
+                                        </li>
+                                        <li>Variables in PHP are case-sensitive. $name is different from $Name.</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <li><strong>ARRAYS</strong><br>
+                        <p>Declaring an array:</p><br>
+                        <p class="code med "><code>
+                        $members = array(“one”, “two”, “three”);<br>
+	                    <br>
+	                    Accessing an array per index: <br>
+	                    $members[1]; //returns the string “one” <br>
+	                    <br>
+	                    Declaring a two-dimensional array<br>
+	                    $group = array(array(“one”, “two”, “three”),<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;array(“a”, “b”, “c”),<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;array(1, 2, 3)<br>
+                        );<br>
+
+                        
+                    </li>
+
+                    </ul>
+                    </ul>
+                </ol>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="jss " class="size spacing ">
+        <div class="container ">
+            <div class="content ">
+                <h2>Introduction</h2>
+                <h3>PHP : Hypertext Processor</h3>
+                <p>&emsp;&emsp;A general purpose scripting language use for web development and can be embedded into HTML. Its a dynamic programming language that can connect to the databases</p>
+                <p><i>Sample php in html file</i></p>
+                <p class="code med "><code>
+                    &lt;!DOCTYPE HTML&gt;<br>
+                    &lt;html&gt;<br>
+                    &emsp;&emsp;&lt;head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Sample&lt;/title&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;/head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;body&gt;<br>
+                    <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;?php<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo "Hi! ";<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;?&gt;<br>
+                    <br>
+                    &emsp;&emsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+
+                </code></p><br><br>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="jsss " class="size spacing ">
+        <div class="container ">
+            <div class="content ">
+                <h2>Introduction</h2>
+                <h3>PHP : Hypertext Processor</h3>
+                <p>&emsp;&emsp;A general purpose scripting language use for web development and can be embedded into HTML. Its a dynamic programming language that can connect to the databases</p>
+                <p><i>Sample php in html file</i></p>
+                <p class="code med "><code>
+                    &lt;!DOCTYPE HTML&gt;<br>
+                    &lt;html&gt;<br>
+                    &emsp;&emsp;&lt;head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Sample&lt;/title&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;/head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;body&gt;<br>
+                    <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;?php<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo "Hi! ";<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;?&gt;<br>
+                    <br>
+                    &emsp;&emsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+
+                </code></p><br><br>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer ">
+        <div class="container ">
+            <div class="content ">
+                <p>&copy;<i> Copyright 2018. <a href="index.html "><b>CourseNotes</b></a>. All Rights Reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript " src="../script/jquery-2.1.3.min.js "></script>
+    <script type="text/javascript " src="../script/script.js " async></script>
+</body>

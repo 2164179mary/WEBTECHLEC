@@ -1,39 +1,47 @@
-$(".menu-toggle").on('click', function () {
-    $(this).toggleClass("on");
-    $('.menu-section').toggleClass("on");
-    $("nav ul").toggleClass('hidden');
-});
-
-$(".nav-toggle").on("click", function () {
-    $(".hamburger-03").toggleClass("hamburger-03-activate");
-    $(".hamburger-02").toggleClass("hamburger-02-activate");
-    $(".hamburger").toggleClass("hamburger-hide-activate");
-    $(".hide-on-click").toggleClass("hide");
-    $(".number-header").toggleClass("hide");
-    $("#mobile-menu").toggleClass("expand-height");
-    $(".logo").toggleClass("animate-center-small animate-center-large");
-    $("li").toggleClass("animated slideInUp");
-    $(".mobile_nav_link").toggleClass("animated slideInRight");
-    // $("html").toggleClass("catchScroll");
-    $(".mobile-ninja").toggleClass("animate-mobile-ninja");
-
-    if ($("#products-menu").hasClass("expand-height")) {
-        $("#products-menu").removeClass("expand-height");
-        $("#mobile-menu").removeClass("expand-height");
-    } else if ($("#crash-tested-menu").hasClass("expand-height")) {
-        $("#products-menu").removeClass("expand-height");
-        $("#mobile-menu").removeClass("expand-height");
-        $("#crash-tested-menu").removeClass("expand-height");
+var lastId,
+  topMenu = $("#subNavi"),
+  topMenuHeight = topMenu.outerHeight() + 1,
+  menuItems = topMenu.find("a"),
+  scrollItems = menuItems.map(function() {
+    var item = $($(this).attr("href"));
+    if (item.length) {
+      return item;
     }
+  });
+  console.log(topMenuHeight);
+
+menuItems.click(function(e) {
+  var href = $(this).attr("href"),
+    offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+  $("html, body")
+    .stop()
+    .animate(
+      {
+        scrollTop: offsetTop
+      },
+      850
+    );
+  e.preventDefault();
 });
 
-$(".products-link").click(function () {
-    $("#mobile-menu").removeClass("expand-height");
-    $("#products-menu").addClass("expand-height");
-});
+$(window).scroll(function() {
+  var fromTop = $(this).scrollTop() + topMenuHeight;
 
-$(".crash-link").click(function () {
-    $("#mobile-menu").removeClass("expand-height");
-    $("#products-menu").removeClass("expand-height");
-    $("#crash-tested-menu").addClass("expand-height");
+  var cur = scrollItems.map(function() {
+    if ($(this).offset().top < fromTop) return this;
+  });
+
+  cur = cur[cur.length - 1];
+  var id = cur && cur.length ? cur[0].id : "";
+
+  if (lastId !== id) {
+    lastId = id;
+    menuItems
+      .parent()
+      .removeClass("active")
+      .end()
+      .filter("[href=#" + id + "]")
+      .parent()
+      .addClass("active");
+  }
 });
