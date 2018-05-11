@@ -27,9 +27,9 @@
                 <nav class="menus">
                     <ul>
                         <li><a href="index.php"><img src="./images/home.png">Home</a></li>
-                        <li><a href="./links/topics.html"><img src="./images/pin.png">Topics</a></li>
+                        <li><a href="topics.php"><img src="./images/pin.png">Topics</a></li>
                         <li><a href="exercise.php"><img src="./images/mind.png">Exercises</a></li>
-                        <li><a href="./links/AboutUs.html"><img src="./images/group.png">About Us</a></li>
+                        <li><a href="AboutUs.php"><img src="./images/group.png">About Us</a></li>
                     </ul>
                 </nav>
             </div>
