@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CourseNotes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.ico">
+    <link rel="Stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <img alt="logo" src="../images/CourseNotes%20Logo%20.png">
+                </div>
+                <div class="nav-menu right">
+                    <nav class="login">
+                        <ul>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Signup</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav-menu right">
+                    <nav class="menus">
+                        <ul>
+                            <li><a href="index.html"><img src="../images/home.png">Home</a></li>
+                            <li><a href="../links/topics.html"><img src="../images/pin.png">Topics</a></li>
+                            <li><a href="../links/exercises.html"><img src="../images/mind.png">Exercises</a></li>
+                            <li><a href="../links/AboutUs.html"><img src="../images/group.png">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--
+    <div class="container">
+        <div class="content">
+            <div class=side>
+                <nav>
+                    <ul id="subNavi">
+                        <li class="active"><a href="#js">Introduction</a></li>
+                        <li><a href="#jss">WWW</a></li>
+                        <li>
+                            <a href="#jsss">Components of the Web</a></li>
+                        <li><a href=" #www-how ">How The Web Works</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    -->
+    <section class="image-bg topics ">
+        <div class="container ">
+            <div class="content ">
+                <div class="banner ">
+                    <div class="col-12 t-content ">
+                        <h1>SERVLET</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="javaservlet " class="size spacing ">
+        <div class="container ">
+            <div class="content ">
+                <h2>Introduction</h2>
+                <h3>Java Servlet</h3>
+                <ul class="no-style">
+                    <li>-&emsp;&emsp;This are Java objects that are intended to components in client server communications.</li>
+                    <li>-&emsp;&emsp;It handles clients’ requests by generating responses to such requests.</li>
+                    <li>-&emsp;&emsp;It is a part of the JAVA EE specification <i>(see java servlet API for more details)</i>.</li>  
+                </ul>
+                 <div class="code">
+                    <p><code><b>Java Servlet</b> is an object that hosted in ‘servlet container’.<br><br>
+                    <b>‘Servlet Container’</b> is an environment.
+                    </code></p>
+                </div>
+                <p class="center"><i>Sample php in html file</i></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="javaservlet " class="size spacing ">
+        <div class="container ">
+            <div class="content ">
+                <h2>Introduction</h2>
+                <h3>Servlet Lifecycle</h3>
+                <ul class="no-style">
+                    <li>&emsp;&emsp;<b> &#9679; instnatation</b></li> <li>&emsp;&emsp;&emsp;&emsp;&emsp;- constructor call</li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- creates an instance of the servlet service client requests.</li>
+                   <li>&emsp;&emsp;&emsp;&emsp;&emsp;- deployment of the descriptor (web.xml) for the web application.</li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked implicitly by the server container when the servlet is called upon to service a client request &amp; no instance currently exists.</li><br>
+                      <li>&emsp;&emsp;<b> &#9679; initialization</b></li> <li>&emsp;&emsp;&emsp;&emsp;&emsp;- int() method</li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked only once &amp; is intended for any startup initialization code for servlet</li>
+                   <li>&emsp;&emsp;&emsp;&emsp;&emsp;- an action will occur in parsing the context of the application (web.xml).</li>
+                </ul>
+                 <p class="code med "><code>
+                    &lt;servlet&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;servlet-nameWebTechServletDemo&lt;/servlet-name&gt;<br>
+                    &lt;servlet-class&gt;com.coursenotes.WebTechServletDemo&lt;/servlet-class&gt;<br>
+                    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;<br>
+                     &lt;/servlet&gt;
+                </code></p>
+                <p class="center"><i>Sample for Servlet Lifecycle instantation. This method is called once in this server life cycle. The com.coursenotes.WebTechServletDemo is the corresponding method to the server class, and this will invoke the web container.</i></p>
+            <ul class="no-style">
+                <li>&emsp;&emsp;<b> &#9679; request handling</b></li> <li>&emsp;&emsp;&emsp;&emsp;&emsp;- service() method</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;- method that handle the request being send to the server..</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked for each client request are typically handled by a single, multi-threaded servlet instance; thus, must be exercised to ensure that the code being run by servlet is ‘<b>safe thread</b>’.</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;<b>Different types of request:</b></li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; POST</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; GET</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; HEAD</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; PUT</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; DELETE</li>
+                <li>&emsp;&emsp;<b> &#9679;destruction</b></li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;- destroy() method</li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked only once before unloading the servlet.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+               
+
+    <footer id="footer ">
+        <div class="container ">
+            <div class="content ">
+                <p>&copy;<i> Copyright 2018. <a href="index.html "><b>CourseNotes</b></a>. All Rights Reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript " src="../script/jquery-2.1.3.min.js "></script>
+    <script type="text/javascript " src="../script/script.js " async></script>
+</body>
