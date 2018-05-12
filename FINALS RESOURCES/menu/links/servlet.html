@@ -92,41 +92,35 @@
                 <h2>Introduction</h2>
                 <h3>Servlet Lifecycle</h3>
                 <ul class="no-style">
-                    <li>&emsp;&emsp;<b> &#9679; instnatation</b></li> <li>&emsp;&emsp;&emsp;&emsp;&emsp;- constructor call</li>
-                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- creates an instance of the servlet service client requests.</li>
-                   <li>&emsp;&emsp;&emsp;&emsp;&emsp;- deployment of the descriptor (web.xml) for the web application.</li>
-                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked implicitly by the server container when the servlet is called upon to service a client request &amp; no instance currently exists.</li><br>
-                      <li>&emsp;&emsp;<b> &#9679; initialization</b></li> <li>&emsp;&emsp;&emsp;&emsp;&emsp;- int() method</li>
-                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked only once &amp; is intended for any startup initialization code for servlet</li>
-                   <li>&emsp;&emsp;&emsp;&emsp;&emsp;- an action will occur in parsing the context of the application (web.xml).</li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;-	java servlet is used to handle http request &amp; generate http responses.</li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;-	this servlet is tied to HTTP Protocol.</li>
+                   <li>&emsp;&emsp;&emsp;&emsp;&emsp;- this servlet is used to implement an application’s web layer.</li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- HTTP Servlet is dependent and used specifically to a HTTP protocol.</li><br>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;-	Hosted in ‘web container’ which a component in java ‘application server’ (e.g. Apache TomCat, Red Hat JBoss / WildFly, Oracle GlassFish, IBM Web Sphere)</li><br>
+                   <li>&emsp;&emsp;&emsp;&emsp;&emsp;<b>The service() method call is routed to a doXXX() call, depending on the http request method:</b></li>
+                </ul>
+                <ul class="no-style">
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#9679; doGet()</li> 
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#9679; doPost()</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#9679; doHead()</li> 
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#9679; doPut()</li> 
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#9679; doDelete()</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#9679; doOptions()</li>
+                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#9679; doTrace()</li>   
                 </ul>
                  <p class="code med "><code>
-                    &lt;servlet&gt;<br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&lt;servlet-nameWebTechServletDemo&lt;/servlet-name&gt;<br>
-                    &lt;servlet-class&gt;com.coursenotes.WebTechServletDemo&lt;/servlet-class&gt;<br>
-                    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;<br>
-                     &lt;/servlet&gt;
+                    public class DemoHttpServlet extends HttpServlet{<br>
+                    &emsp;&emsp;&emsp;&emsp;protected voicd doGet(HttpServletReuqest request, HttpServlet response)<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; throws ServletException, IOException{<br>
+                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;response.getWriter().write("&lt;html&gt;&lt;body&gt;GET response&lt;body&gt;&lt;/html&gt;");<br>
+                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
+                     }
                 </code></p>
-                <p class="center"><i>Sample for Servlet Lifecycle instantation. This method is called once in this server life cycle. The com.coursenotes.WebTechServletDemo is the corresponding method to the server class, and this will invoke the web container.</i></p>
-            <ul class="no-style">
-                <li>&emsp;&emsp;<b> &#9679; request handling</b></li> <li>&emsp;&emsp;&emsp;&emsp;&emsp;- service() method</li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;- method that handle the request being send to the server..</li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked for each client request are typically handled by a single, multi-threaded servlet instance; thus, must be exercised to ensure that the code being run by servlet is ‘<b>safe thread</b>’.</li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;<b>Different types of request:</b></li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; POST</li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; GET</li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; HEAD</li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; PUT</li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &#8226; DELETE</li>
-                <li>&emsp;&emsp;<b> &#9679;destruction</b></li>
-                <li>&emsp;&emsp;&emsp;&emsp;&emsp;- destroy() method</li>
-                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;- invoked only once before unloading the servlet.</li>
-                </ul>
+                <p class="center"><i>Sample for handling both get and post request.</i></p>
             </div>
         </div>
     </section>
                
-
     <footer id="footer ">
         <div class="container ">
             <div class="content ">
