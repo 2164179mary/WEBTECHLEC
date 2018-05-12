@@ -29,23 +29,43 @@
             <div id="topics-desc">
                 <p>Great ways to learn about web technology are the topics presented below. It includes a brief summary of what a certain topic is all about. </p>
             </div>
-            <div class="col-6 left">
-                <figure class="topic-container">
-                    <img src="./images/Server%20Side%20Web%20Scripting.jpg" alt="Java Servlets" />
-                    <figcaption>
-                        <h4><b>Java Servlets</b></h4>
-                        <p>&emsp;</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-6">
-                <figure class="topic-container">
-                    <img src="./images/PHP.jpg" alt="PHP" />
-                    <figcaption>
-                        <h4><b>PHP</b></h4>
-                        <p>&emsp;<a class="button" href="./links/php.html">Read More</a></p>
-                    </figcaption>
-                </figure>
+            <div class="topics">
+                <div class="col-5">
+                    <figure class="topic-container">
+                        <img src="./images/Java_Servlet-Typography.jpg" alt="Java Servlets" />
+                        <figcaption>
+                            <h4><b>Java Servlets</b></h4>
+                            <p>&emsp;</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-5">
+                    <figure class="topic-container">
+                        <img src="./images/PHP.jpg" alt="PHP" />
+                        <figcaption>
+                            <h4><b>PHP</b></h4>
+                            <p>&emsp;<a class="button" href="./links/php.html">Read More</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-5">
+                    <figure class="topic-container">
+                        <img src="./images/Node-Typography.jpg" alt="Java Servlets" />
+                        <figcaption>
+                            <h4><b>Node.js</b></h4>
+                            <p>&emsp;</p>
+                        </figcaption>
+                    </figure>
+                </div><br>
+                <div class="col-5">
+                    <figure class="topic-container">
+                        <img src="./images/JSP-Typography.jpg" alt="PHP" />
+                        <figcaption>
+                            <h4><b>JSP</b></h4>
+                            <p>&emsp;<a class="button" href="./links/php.html">Read More</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
             <br><br><br><br>
         </div>
